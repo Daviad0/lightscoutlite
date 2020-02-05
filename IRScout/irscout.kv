@@ -1,0 +1,324 @@
+# kivy 1.0
+#:import Factory kivy.factory.Factory
+
+<MyPopup@Popup>:
+    auto_dismiss: False
+    Button:
+        text: 'Close me!'
+        on_release: root.dismiss()
+        
+        
+
+<ImageButton@Button>:
+    source: None
+    Image:
+        source: root.source
+        pos: root.pos
+        size: root.size
+           
+
+<IRscoutGUI>:
+    cols: 1
+    rows: 6
+    spacing: 20
+    padding: [20,10]
+
+
+#################
+# Status Section
+#################
+    Label:
+        id: labStatusBar
+        text: 'STATUS BAR'
+        size_hint: 1, 0.20
+    
+#################
+# Header Section
+#################
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint: 1, 0.3
+
+        BoxLayout:
+            Label:
+                text: 'Team Name'
+            TextInput:
+                id: txtTeamName
+                text: ''
+            Label:
+                text: 'Team Number'
+            TextInput:
+                id: txtTeamNumber
+                text: ''
+            
+
+        GridLayout:
+            cols: 2
+            rows: 1
+            
+            BoxLayout:
+                Label:
+                    text: 'Match Number'
+                TextInput:
+                    id: txtMatchNum
+                    text: ''
+
+            BoxLayout:
+                Label:
+                    text: 'Alliance'
+                
+                Button:
+                    id: btnAlliance
+                    text: 'Blue'
+                    background_color: 0, 0, 1, 1 
+                    on_press: root.cb_btnAlliance(btnAlliance)
+
+#                Label:
+#                    id: labAlliance
+#                    text: 'Blue'
+#                    background_color: 0, 0, 1, 1 
+                
+        BoxLayout:
+            Label:
+                size_hint: 0.25, 1
+                text: 'Scout Name'
+            TextInput:
+                id: txtScoutName
+                text: ''
+
+########################
+# Auton / Cycle Section
+########################
+    GridLayout:
+        cols: 3
+        rows: 1
+        spacing: 15
+
+        ImageButton:
+            id: btnCyclePrev
+            source: 'arrow-left.png'
+            size_hint: 0.2, 1
+            on_press: root.cb_btnCyclePrev()
+
+        BoxLayout:
+            orientation: 'vertical'
+            spacing: 20
+	    
+            BoxLayout:
+                spacing: 20
+                orientation: 'horizontal'
+                Label:
+                    id: labAutonCycle
+                    text_size: self.size
+                    halign: 'left'
+                    valign: 'middle'
+                    text: 'AUTON / CYCLE ##'
+
+                ToggleButton:
+                    id: togInitLine
+                    text: 'Initiation Line'
+
+            BoxLayout:
+                spacing: 5
+                orientation: 'horizontal'
+                Label:
+                    text: 'Power Cell Lower: '
+                    text_size: self.size
+                    halign: 'left'
+                    valign: 'middle'
+
+                Label:
+                    id: labPClower
+                    text: '0'
+                    size_hint: 0.2, 1
+
+                ImageButton:
+                    id: butPClowerUp
+                    source: 'arrow-up.png'
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCup(labPClower)
+
+                ImageButton:
+                    id: butPClowerDown
+                    source: 'arrow-down.png'
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCdown(labPClower)
+
+            BoxLayout:
+                spacing: 5
+                orientation: 'horizontal'
+                Label:
+                    text: 'Power Cell Outer: '
+                    text_size: self.size
+                    halign: 'left'
+                    valign: 'middle'
+                    
+                Label:
+                    id: labPCouter
+                    text: '0'
+                    size_hint: 0.2, 1
+
+                ImageButton:
+                    id: butPCouterUp
+                    source: 'arrow-up.png'
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCup(labPCouter)
+
+                ImageButton:
+                    id: butPCouterDown
+                    source: 'arrow-down.png'
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCdown(labPCouter)
+                    
+            BoxLayout:
+                spacing: 5
+                orientation: 'horizontal'
+                Label:
+                    text: 'Power Cell Inner: '
+                    text_size: self.size
+                    halign: 'left'
+                    valign: 'middle'
+
+                Label:
+                    id: labPCinner
+                    text: '0'
+                    size_hint: 0.2, 1
+
+                ImageButton:
+                    id: butPCinnerUp
+                    source: 'arrow-up.png'
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCup(labPCinner)
+
+                ImageButton:
+                    id: butPCinnerDown
+                    source: 'arrow-down.png'
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCdown(labPCinner)
+                                        
+            BoxLayout:
+                spacing: 5
+                orientation: 'horizontal'
+                Label:
+                    text: 'Missed Shots: '
+                    text_size: self.size
+                    halign: 'left'
+                    valign: 'middle'
+
+                Label:
+                    id: labPCmiss
+                    text: '0'
+                    size_hint: 0.2, 1
+
+                ImageButton:
+                    id: butPCmissUp
+                    source: 'arrow-up.png'
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCup(labPCmiss)
+
+                ImageButton:
+                    id: butPCmissDown
+                    source: 'arrow-down.png'
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCdown(labPCmiss)
+                    
+        ImageButton:
+            id: btnCycleNext
+            source: 'arrow-right.png'
+            size_hint: 0.2, 1
+            on_press: root.cb_btnCycleNext()
+
+
+########################
+# Control Panel Section
+########################
+    GridLayout:
+        cols: 3
+        rows: 1
+        size_hint: 1, 0.2
+
+        Label:
+            text: 'Control Panel'
+            text_size: self.size
+            halign: 'left'
+            valign: 'middle'
+            size_hint: 0.5, 1
+
+        ToggleButton:
+            id: btnCPRot
+            text: 'Rotation'
+            
+        ToggleButton:
+            id: btnCPPos
+            text: 'Position'
+
+
+###################
+# End Game Section
+###################
+    GridLayout:
+        cols: 2
+        rows: 1
+        size_hint: 1, 0.4
+
+
+        Label:
+            text: 'End Game'
+            text_size: self.size
+            halign: 'left'
+            valign: 'middle'
+            size_hint: 0.25, 1
+            
+        GridLayout:
+            cols: 2
+            rows: 2
+    
+            ToggleButton:
+                id: btnParkOnly
+                text: 'Park Only'
+    
+            ToggleButton:
+                id: btnClimbAtt
+                text: 'Climb Attempted'
+    
+            ToggleButton:
+                id: btnClimbSuc
+                text: 'Climb Succesful'
+
+            ToggleButton:
+                id: btnBalance
+                text: 'Balance Succesful'
+
+#######################
+# Navigation  Section
+#######################
+    GridLayout:
+        cols: 5
+        rows: 1
+        size_hint: 1, 0.20
+        
+        Button:
+            id: btnPrev
+            text: 'Previous'
+            on_press: root.cb_btnPrev()
+
+        Button:
+            id: btnNext
+            text: 'Next'
+            on_press: root.cb_btnNext()
+
+        Button:
+            id: btnSave
+            text: 'Save'
+            on_press: root.cb_btnSave()
+  
+        Button:
+            id: btnDelete
+            text: 'Delete'
+            on_press: root.cb_btnDelete()
+                      
+        Button:
+            id: btnNew
+            text: 'New Entry'
+            on_press: root.cb_btnNewEntry()
+
