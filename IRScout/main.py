@@ -35,7 +35,8 @@ class matchEntry:
         self.powerCellLower = [ 0 ] * (MAX_TELEOP_CYCLES + 1)
         self.powerCellOuter = [ 0 ] * (MAX_TELEOP_CYCLES + 1)
         self.powerCellInner = [ 0 ] * (MAX_TELEOP_CYCLES + 1)
-        self.powerCellMiss =  [ 0 ] * (MAX_TELEOP_CYCLES + 1)
+        self.powerCellMiss = [ 0 ] * (MAX_TELEOP_CYCLES + 1)
+        self.totalCycles = [ 0 ] * (MAX_TELEOP_CYCLES + 1)
         self.controlPanelRot = 0
         self.controlPanelPos = 0
         self.endGamePark = 0
@@ -68,6 +69,13 @@ class matchEntry:
         outStr += 'Power Cell Miss'
         for score in self.powerCellMiss:
             outStr += ',' + str(score)
+        outStr += '\n'
+        outStr += 'Cycle Completed Status'
+        for score in self.totalCycles:
+            if((self.powerCellInner[score] + self.powerCellLower[score] + self.powerCellMiss[score] + self.powerCellOuter[score]) > 0):
+                outStr += ',1'
+            else:
+                outStr += ',0'
         outStr += '\n'
         
         # Write Control Panel and End Game Sections
