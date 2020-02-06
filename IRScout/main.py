@@ -72,7 +72,7 @@ class matchEntry:
         outStr += '\n'
         outStr += 'Cycle Completed Status'
         for score in self.totalCycles:
-            if((self.powerCellInner[score] + self.powerCellLower[score] + self.powerCellMiss[score] + self.powerCellOuter[score]) > 0):
+            if((self.powerCellInner[score] + self.powerCellLower[score] + self.powerCellMiss[score] + self.powerCellOuter[score]) > 1):
                 outStr += ',1'
             else:
                 outStr += ',0'
