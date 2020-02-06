@@ -28,6 +28,7 @@ class matchEntry:
     def __init__(self):
         self.teamName = ''
         self.teamNumber = ''
+        self.eventCode = '862home'
         self.matchNum = ''
         self.alliance = 'Blue'
         self.scoutName = ''
@@ -48,6 +49,7 @@ class matchEntry:
         # Write Header Seaction
         outStr = 'Team Name,' + self.teamName + '\n'
         outStr += 'Team Number,' + self.teamNumber  + '\n'
+        outStr += 'Event Code,' + self.eventCode + '\n'
         outStr += 'Match Num,' + self.matchNum + '\n'
         outStr += 'Alliance,' + self.alliance + '\n'
         outStr += 'Scout Name,' + self.scoutName + '\n'
@@ -71,11 +73,13 @@ class matchEntry:
             outStr += ',' + str(score)
         outStr += '\n'
         outStr += 'Cycle Completed Status'
+        totalCycleIteration = 0
         for score in self.totalCycles:
-            if((self.powerCellInner[score] + self.powerCellLower[score] + self.powerCellMiss[score] + self.powerCellOuter[score]) > 1):
+            if((self.powerCellInner[totalCycleIteration] + self.powerCellLower[totalCycleIteration] + self.powerCellMiss[totalCycleIteration] + self.powerCellOuter[totalCycleIteration]) > 0):
                 outStr += ',1'
             else:
                 outStr += ',0'
+            totalCycleIteration += 1
         outStr += '\n'
         
         # Write Control Panel and End Game Sections
@@ -95,6 +99,7 @@ class matchEntry:
     def isEqual( self, entry ):
         if( self.teamName != entry.teamName ): return 0
         if( self.teamNumber != entry.teamNumber ): return 0
+        if( self.eventCode != entry.eventCode ): return 0
         if( self.matchNum != entry.matchNum ) : return 0
         if( self.alliance != entry.alliance) : return 0
         if( self.scoutName != entry.scoutName) : return 0
@@ -104,6 +109,7 @@ class matchEntry:
             if( self.powerCellOuter[ i ] != entry.powerCellOuter[ i ] ): return 0
             if( self.powerCellInner[ i ] != entry.powerCellInner[ i ] ): return 0
             if( self.powerCellMiss[ i ] != entry.powerCellMiss[ i ] ): return 0
+            if( self.totalCycles[ i ] != entry.totalCycles[ i ] ): return 0
         if( self.controlPanelRot != entry.controlPanelRot ): return 0
         if( self.controlPanelPos != entry.controlPanelPos ): return 0
         if( self.endGamePark != self.endGamePark ): return 0
@@ -160,6 +166,10 @@ def readAllMatchData( ifp ):
         data = indata[lineIdx].split(',')
         entry.teamNumber = data[1]
         lineIdx = lineIdx + 1
+
+        data = indata[lineIdx].split(',')
+        entry.eventCode = data[1]
+        lineIdx = lineIdx + 1
         
         data = indata[lineIdx].split(',')
         entry.matchNum = data[1]
@@ -195,6 +205,11 @@ def readAllMatchData( ifp ):
         data = indata[lineIdx].split(',')
         for i in range(0, MAX_TELEOP_CYCLES+1):
             entry.powerCellMiss[i] = int(data[i+1])
+        lineIdx = lineIdx + 1
+
+        data = indata[lineIdx].split(',')
+        for i in range(0, MAX_TELEOP_CYCLES+1):
+            entry.totalCycles[i] = int(data[i+1])
         lineIdx = lineIdx + 1
 
         data = indata[lineIdx].split(',')

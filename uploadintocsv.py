@@ -5,6 +5,7 @@ import json
 
 #STATION TO TRACK
 globalstation = "Red2"
+eventCode = "mishe"
 headers = {
         'Authorization': 'Basic ZGF2aWFkbzo1OUJBQzZGMi1FMDVFLTQyREUtQkQ1MS1BNjI2MkE5MjkwOUI=',
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
@@ -38,6 +39,7 @@ for jsonimport in response["Schedule"]:
             #TEAM NAME
             red1string = red1string + "Team Number,"
             red1string = red1string + str(item["teamNumber"]) + "\n"
+            red1string = red1string + "Event Code," + eventCode + "\n"
             #TEAM NUMBER
             red1string = red1string + "Match Num," + "1\n"
             #MATCH NUMBER
@@ -56,6 +58,8 @@ for jsonimport in response["Schedule"]:
             #INNER PORT
             red1string = red1string + "Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n"
             #MISSED PORT
+            red1string = red1string + "Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n"
+            #CYCLE DETECTION
             red1string = red1string + "Control Panel Rotation,0\n"
             #CP ROTATION
             red1string = red1string + "Control Panel Position,0\n"
@@ -76,6 +80,7 @@ for jsonimport in response["Schedule"]:
             #TEAM NAME
             red2string = red2string + "Team Number,"
             red2string = red2string + str(item["teamNumber"]) + "\n"
+            red2string = red2string + "Event Code," + eventCode + "\n"
             #TEAM NUMBER
             red2string = red2string + "Match Num," + "1\n"
             #MATCH NUMBER
@@ -94,6 +99,8 @@ for jsonimport in response["Schedule"]:
             #INNER PORT
             red2string = red2string + "Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n"
             #MISSED PORT
+            red2string = red2string + "Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n"
+            #CYCLE DETECTION
             red2string = red2string + "Control Panel Rotation,0\n"
             #CP ROTATION
             red2string = red2string + "Control Panel Position,0\n"
@@ -114,6 +121,7 @@ for jsonimport in response["Schedule"]:
             #TEAM NAME
             red3string = red3string + "Team Number,"
             red3string = red3string + str(item["teamNumber"]) + "\n"
+            red3string = red3string + "Event Code," + eventCode + "\n"
             #TEAM NUMBER
             red3string = red3string + "Match Num," + "1\n"
             #MATCH NUMBER
@@ -132,6 +140,8 @@ for jsonimport in response["Schedule"]:
             #INNER PORT
             red3string = red3string + "Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n"
             #MISSED PORT
+            red3string = red3string + "Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n"
+            #CYCLE DETECTION
             red3string = red3string + "Control Panel Rotation,0\n"
             #CP ROTATION
             red3string = red3string + "Control Panel Position,0\n"
@@ -152,6 +162,7 @@ for jsonimport in response["Schedule"]:
             #TEAM NAME
             blue1string = blue1string + "Team Number,"
             blue1string = blue1string + str(item["teamNumber"]) + "\n"
+            blue1string = blue1string + "Event Code," + eventCode + "\n"
             #TEAM NUMBER
             blue1string = blue1string + "Match Num," + "1\n"
             #MATCH NUMBER
@@ -170,6 +181,8 @@ for jsonimport in response["Schedule"]:
             #INNER PORT
             blue1string = blue1string + "Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n"
             #MISSED PORT
+            blue1string = blue1string + "Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n"
+            #CYCLE DETECTION
             blue1string = blue1string + "Control Panel Rotation,0\n"
             #CP ROTATION
             blue1string = blue1string + "Control Panel Position,0\n"
@@ -190,6 +203,7 @@ for jsonimport in response["Schedule"]:
             #TEAM NAME
             blue2string = blue2string + "Team Number,"
             blue2string = blue2string + str(item["teamNumber"]) + "\n"
+            blue2string = blue2string + "Event Code," + eventCode + "\n"
             #TEAM NUMBER
             blue2string = blue2string + "Match Num," + "1\n"
             #MATCH NUMBER
@@ -208,6 +222,8 @@ for jsonimport in response["Schedule"]:
             #INNER PORT
             blue2string = blue2string + "Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n"
             #MISSED PORT
+            blue2string = blue2string + "Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n"
+            #CYCLE DETECTION
             blue2string = blue2string + "Control Panel Rotation,0\n"
             #CP ROTATION
             blue2string = blue2string + "Control Panel Position,0\n"
@@ -228,6 +244,7 @@ for jsonimport in response["Schedule"]:
             #TEAM NAME
             blue3string = blue3string + "Team Number,"
             blue3string = blue3string + str(item["teamNumber"]) + "\n"
+            blue3string = blue3string + "Event Code," + eventCode + "\n"
             #TEAM NUMBER
             blue3string = blue3string + "Match Num," + "1\n"
             #MATCH NUMBER
@@ -246,6 +263,8 @@ for jsonimport in response["Schedule"]:
             #INNER PORT
             blue3string = blue3string + "Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n"
             #MISSED PORT
+            blue3string = blue3string + "Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\n"
+            #CYCLE DETECTION
             blue3string = blue3string + "Control Panel Rotation,0\n"
             #CP ROTATION
             blue3string = blue3string + "Control Panel Position,0\n"
