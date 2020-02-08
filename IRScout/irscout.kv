@@ -17,6 +17,8 @@
         size: root.size
            
 
+#:set fontSize 24
+
 <IRscoutGUI>:
     cols: 1
     rows: 6
@@ -30,6 +32,7 @@
     Label:
         id: labStatusBar
         text: 'STATUS BAR'
+        font_size: fontSize
         size_hint: 1, 0.20
     
 #################
@@ -110,6 +113,7 @@
                 Label:
                     id: labAutonCycle
                     text_size: self.size
+                    font_size: fontSize
                     halign: 'left'
                     valign: 'middle'
                     text: 'AUTON / CYCLE ##'
@@ -122,14 +126,22 @@
                 spacing: 5
                 orientation: 'horizontal'
                 Label:
-                    text: 'Power Cell Lower: '
+                    text: 'PC Lower: '
+                    font_size: fontSize
                     text_size: self.size
                     halign: 'left'
                     valign: 'middle'
 
+                ImageButton:
+                    id: butPClowerDown
+                    source: 'arrow-down.png'
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCdown(labPClower)
+
                 Label:
                     id: labPClower
                     text: '0'
+                    font_size: fontSize
                     size_hint: 0.2, 1
 
                 ImageButton:
@@ -138,31 +150,15 @@
                     size_hint: 0.3, 1
                     on_press: root.cb_btnPCup(labPClower)
 
-                ImageButton:
-                    id: butPClowerDown
-                    source: 'arrow-down.png'
-                    size_hint: 0.3, 1
-                    on_press: root.cb_btnPCdown(labPClower)
-
             BoxLayout:
                 spacing: 5
                 orientation: 'horizontal'
                 Label:
-                    text: 'Power Cell Outer: '
+                    text: 'PC Outer: '
+                    font_size: fontSize
                     text_size: self.size
                     halign: 'left'
                     valign: 'middle'
-                    
-                Label:
-                    id: labPCouter
-                    text: '0'
-                    size_hint: 0.2, 1
-
-                ImageButton:
-                    id: butPCouterUp
-                    source: 'arrow-up.png'
-                    size_hint: 0.3, 1
-                    on_press: root.cb_btnPCup(labPCouter)
 
                 ImageButton:
                     id: butPCouterDown
@@ -170,18 +166,38 @@
                     size_hint: 0.3, 1
                     on_press: root.cb_btnPCdown(labPCouter)
                     
+                Label:
+                    id: labPCouter
+                    text: '0'
+                    font_size: fontSize
+                    size_hint: 0.2, 1
+
+                ImageButton:
+                    id: butPCouterUp
+                    source: 'arrow-up.png'
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCup(labPCouter)
+                    
             BoxLayout:
                 spacing: 5
                 orientation: 'horizontal'
                 Label:
-                    text: 'Power Cell Inner: '
+                    text: 'PC Inner: '
+                    font_size: fontSize
                     text_size: self.size
                     halign: 'left'
                     valign: 'middle'
 
+                ImageButton:
+                    id: butPCinnerDown
+                    source: 'arrow-down.png'
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCdown(labPCinner)
+
                 Label:
                     id: labPCinner
                     text: '0'
+                    font_size: fontSize
                     size_hint: 0.2, 1
 
                 ImageButton:
@@ -189,25 +205,27 @@
                     source: 'arrow-up.png'
                     size_hint: 0.3, 1
                     on_press: root.cb_btnPCup(labPCinner)
-
-                ImageButton:
-                    id: butPCinnerDown
-                    source: 'arrow-down.png'
-                    size_hint: 0.3, 1
-                    on_press: root.cb_btnPCdown(labPCinner)
                                         
             BoxLayout:
                 spacing: 5
                 orientation: 'horizontal'
                 Label:
-                    text: 'Missed Shots: '
+                    text: 'Missed: '
+                    font_size: fontSize
                     text_size: self.size
                     halign: 'left'
                     valign: 'middle'
 
+                ImageButton:
+                    id: butPCmissDown
+                    source: 'arrow-down.png'
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCdown(labPCmiss)
+
                 Label:
                     id: labPCmiss
                     text: '0'
+                    font_size: fontSize
                     size_hint: 0.2, 1
 
                 ImageButton:
@@ -215,12 +233,6 @@
                     source: 'arrow-up.png'
                     size_hint: 0.3, 1
                     on_press: root.cb_btnPCup(labPCmiss)
-
-                ImageButton:
-                    id: butPCmissDown
-                    source: 'arrow-down.png'
-                    size_hint: 0.3, 1
-                    on_press: root.cb_btnPCdown(labPCmiss)
                     
         ImageButton:
             id: btnCycleNext
@@ -276,6 +288,7 @@
             ToggleButton:
                 id: btnParkOnly
                 text: 'Park Only'
+                on_press: root.cb_btnParkOnly(btnParkOnly)
     
             ToggleButton:
                 id: btnClimbAtt
@@ -284,10 +297,12 @@
             ToggleButton:
                 id: btnClimbSuc
                 text: 'Climb Succesful'
+                on_press: root.cb_btnClimbOrBalance(btnClimbSuc)
 
             ToggleButton:
                 id: btnBalance
                 text: 'Balance Succesful'
+                on_press: root.cb_btnClimbOrBalance(btnBalance)
 
 #######################
 # Navigation  Section

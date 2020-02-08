@@ -12,7 +12,10 @@ import copy
 
 
 # Global varialbes
+MAX_POWER_CELLS_AUTON = 20
+MAX_POWER_CELLS_CYCLE = 5
 MAX_POWER_CELLS = 5
+
 MAX_TELEOP_CYCLES = 20
 DEBUG = 0
 
@@ -44,7 +47,7 @@ class matchEntry:
         self.endGameClimbAttempt = 0
         self.endGameClimbSuccess = 0
         self.endGameBalance = 0
-
+        
     def outputEntryToString(self):
         # Write Header Seaction
         outStr = 'Team Name,' + self.teamName + '\n'
@@ -243,14 +246,11 @@ def readAllMatchData( ifp ):
         if(DEBUG):
             print('READ DATA:')
             print(entry.outputEntryToString())
-        
-
     
 # Function to increase the number of power cells (limit = 5)
 def increasePC( labPCwidget ):
     curVal = int(labPCwidget.text)
-    if( curVal < MAX_POWER_CELLS):
-        labPCwidget.text = str(curVal+1)
+    labPCwidget.text = str(curVal+1)
 
 # Function to decrease the number of power cells (limit = 0)
 def decreasePC( labPCwidget ):
@@ -348,17 +348,34 @@ class IRscoutGUI(GridLayout):
         setToggleButton(self.ids.btnClimbSuc, entry.endGameClimbSuccess)
         setToggleButton(self.ids.btnBalance, entry.endGameBalance)
         
+        # Set button activities
+        if( entry.endGamePark ):
+            self.cb_btnParkOnly(self.ids.btnParkOnly)
+            self.ids.btnParkOnly.disabled = False
+            self.ids.btnClimbSuc.disabled = True
+            self.ids.btnBalance.disabled = True
+            
+        if( entry.endGameClimbSuccess or entry.endGameBalance ):
+            self.ids.btnParkOnly.disabled = True
+            self.ids.btnClimbSuc.disabled = False
+            self.ids.btnBalance.disabled = False
+        else:
+            self.ids.btnParkOnly.disabled = False
+
     
     # Function to fill the current cycle data
     def fillCycleData(self):
+        global MAX_POWER_CELLS, MAX_POWER_CELLS_CYCLE, MAX_POWER_CELLS_AUTON
         entry = self.currentEntry
         if (self.currentCycleId > 0):
             cycleStr = 'CYCLE #' + str(self.currentCycleId)
             self.ids.togInitLine.disabled = True
+            MAX_POWER_CELLS = MAX_POWER_CELLS_CYCLE
         else:
             cycleStr = 'AUTON'
             self.ids.togInitLine.disabled = False
             setToggleButton(self.ids.togInitLine, entry.initiationLine)
+            MAX_POWER_CELLS = MAX_POWER_CELLS_AUTON
         
         self.ids.labAutonCycle.text = cycleStr
         
@@ -481,6 +498,23 @@ class IRscoutGUI(GridLayout):
         popup.open()
 
 
+    # Pop up confirm delete
+    def savePopupConfirm(self):
+        layout = GridLayout(cols = 1, padding = 20) 
+
+        dismissButton = Button(text = 'Dismiss') 
+
+        layout.add_widget(dismissButton) 
+                    
+        popup = Popup(title='File saved.',
+                           content=layout,
+                           auto_dismiss=False,
+                           size_hint=(None, None), size=(250,200))
+        
+        dismissButton.bind( on_release = popup.dismiss )
+        popup.open()
+
+
     # Save popup yes button actions
     def cb_deleteYesButton(self, tmp ):
         # Delete the entry if it is in the database
@@ -525,12 +559,38 @@ class IRscoutGUI(GridLayout):
 
     # Power cell up arrow callback
     def cb_btnPCup(self, labPC):
-        increasePC(labPC)
+        pcSum = int(self.ids.labPClower.text) + int(self.ids.labPCouter.text) + \
+                int(self.ids.labPCinner.text) + int(self.ids.labPCmiss.text)
+        
+        if( pcSum < MAX_POWER_CELLS):
+            increasePC(labPC)
 
     # Power cell down arrow callback
     def cb_btnPCdown(self, labPC):
         decreasePC(labPC)
 
+    def cb_btnParkOnly(self, btnParkOnly):
+        if( getToggleButton( btnParkOnly ) ):
+            # Turn Climb sucessful and Balance off
+            setToggleButton(self.ids.btnClimbSuc, False )
+            self.ids.btnClimbSuc.disabled = True
+            setToggleButton(self.ids.btnBalance, False )
+            self.ids.btnBalance.disabled = True
+        else:  
+            # Turn Climb sucessful and Balnce on
+            self.ids.btnClimbSuc.disabled = False
+            self.ids.btnBalance.disabled = False
+
+    def cb_btnClimbOrBalance(self, btnClimbOrBalance):
+        if( getToggleButton(self.ids.btnClimbSuc) or 
+           getToggleButton(self.ids.btnBalance) ):
+            # Turn Park Only off
+            setToggleButton(self.ids.btnParkOnly, False )
+            self.ids.btnParkOnly.disabled = True
+        else:   
+            self.ids.btnParkOnly.disabled = False
+
+            
     # Move to PREVIOUS cycle
     def cb_btnCyclePrev(self):
         self.getCycleData()
@@ -606,6 +666,9 @@ class IRscoutGUI(GridLayout):
         
         # Update Header
         self.fillEntryData()
+        
+        # File popup
+        self.savePopupConfirm()
 
 
     # Save the current database
