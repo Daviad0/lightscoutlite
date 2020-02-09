@@ -22,6 +22,7 @@ DEBUG = 0
 AllMatchData = []
 
 FileName = 'IRscout.csv'
+DefaultEventCode = ''
 
 
 
@@ -29,9 +30,11 @@ FileName = 'IRscout.csv'
 class matchEntry:
     
     def __init__(self):
+        
+        global DefaultEventCode
         self.teamName = ''
         self.teamNumber = ''
-        self.eventCode = '862home'
+        self.eventCode = DefaultEventCode
         self.matchNum = ''
         self.alliance = 'Blue'
         self.scoutName = ''
@@ -115,7 +118,7 @@ class matchEntry:
             if( self.totalCycles[ i ] != entry.totalCycles[ i ] ): return 0
         if( self.controlPanelRot != entry.controlPanelRot ): return 0
         if( self.controlPanelPos != entry.controlPanelPos ): return 0
-        if( self.endGamePark != self.endGamePark ): return 0
+        if( self.endGamePark != entry.endGamePark ): return 0
         if( self.endGameClimbAttempt != entry.endGameClimbAttempt ): return 0
         if( self.endGameClimbSuccess != entry.endGameClimbSuccess ): return 0
         if( self.endGameBalance != entry.endGameBalance ): return 0
@@ -242,7 +245,13 @@ def readAllMatchData( ifp ):
         # Skip footer
         lineIdx = lineIdx + 1
         
+        # Append to match data
         AllMatchData.append(entry)
+        
+        # Set event code to last read event
+        global DefaultEventCode
+        DefaultEventCode = entry.eventCode
+        
         if(DEBUG):
             print('READ DATA:')
             print(entry.outputEntryToString())
@@ -436,7 +445,7 @@ class IRscoutGUI(GridLayout):
         noButton = Button(text = 'No')
 
         layout.add_widget(yesButton) 
-        layout.add_widget(noButton)   
+        layout.add_widget(noButton)
                     
         popup = Popup(title='Do you want to save your updates?',
                            content=layout,
@@ -474,6 +483,7 @@ class IRscoutGUI(GridLayout):
             self.cb_btnNext()
         elif(self.SaveEvent == 'New'):
             self.cb_btnNewEntry()
+
 
 
     # Pop up confirm delete
@@ -548,7 +558,37 @@ class IRscoutGUI(GridLayout):
     #####################
     # CALLBACK FUNCTIONS
     #####################
-    # Power cell up arrow callback
+    # User button callback
+    def cb_btnSetUser( self, btnSetUser ):
+        layout = GridLayout(cols = 2, padding = 20) 
+
+        btnStd = Button(text = 'Standard') 
+        btnAdv = Button(text = 'Advanced')
+        layout.add_widget(btnStd)
+        layout.add_widget(btnAdv)
+
+        popup = Popup(title='Select user type:',
+                           content=layout,
+                           auto_dismiss=False,
+                           size_hint=(None, None), size=(250,200))
+        
+        btnStd.bind( on_release = popup.dismiss )
+        btnStd.bind( on_release = self.cb_selectStdUser )
+        btnAdv.bind( on_release = popup.dismiss )
+        btnAdv.bind( on_release = self.cb_selectAdvUser )
+        popup.open()
+        
+    # Set the GUI for a standard user
+    def cb_selectStdUser(self, btnSetUser):
+        self.ids.btnDelete.disabled = True
+        self.ids.btnNew.disabled = True
+        
+    # Set the GUI for a standard user
+    def cb_selectAdvUser(self, btnSetUser):
+        self.ids.btnDelete.disabled = False
+        self.ids.btnNew.disabled = False
+    
+    # Alliance button callback
     def cb_btnAlliance(self, btnAlliance):
         if( btnAlliance.text == 'Blue' ):
             btnAlliance.text = 'Red'
