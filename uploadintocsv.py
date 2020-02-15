@@ -10,7 +10,7 @@ headers = {
         'Authorization': 'Basic ZGF2aWFkbzo1OUJBQzZGMi1FMDVFLTQyREUtQkQ1MS1BNjI2MkE5MjkwOUI=',
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
         }
-response = requests.get("https://frc-api.firstinspires.org/v2.0/2019/schedule/mishe?tournamentlevel=qual", headers=headers)
+response = requests.get("https://frc-api.firstinspires.org/v2.0/2020/schedule/week0?tournamentlevel=qual", headers=headers)
 response = json.loads(response.text)
 filewriterr1 = open("IRscout_Red1.csv", "w")
 filewriterr2 = open("IRscout_Red2.csv", "w")
@@ -35,7 +35,7 @@ for jsonimport in response["Schedule"]:
     for item in jsonimport["teams"]:
         if(item["station"] == "Red1"):
             i1 += 1
-            red1string = red1string + "Team Name,Test" + "\n"
+            red1string = red1string + "Team Name," + "\n"
             #TEAM NAME
             red1string = red1string + "Team Number,"
             red1string = red1string + str(item["teamNumber"]) + "\n"
@@ -46,7 +46,7 @@ for jsonimport in response["Schedule"]:
             red1string = red1string + "Alliance,"
             red1string = red1string + str(item["station"]) + "\n"
             #ALLIANCE STATION
-            red1string = red1string + "Scout Name,David Reeves\n"
+            red1string = red1string + "Scout Name,\n"
             #SCOUT NAME
             red1string = red1string + "AUTON Initation Line,0\n"
             #AUTON INITATION LINE
@@ -76,7 +76,7 @@ for jsonimport in response["Schedule"]:
             print("+ Red 1")
         if(item["station"] == "Red2"):
             i2 += 1
-            red2string = red2string + "Team Name,Test" + "\n"
+            red2string = red2string + "Team Name," + "\n"
             #TEAM NAME
             red2string = red2string + "Team Number,"
             red2string = red2string + str(item["teamNumber"]) + "\n"
@@ -87,7 +87,7 @@ for jsonimport in response["Schedule"]:
             red2string = red2string + "Alliance,"
             red2string = red2string + str(item["station"]) + "\n"
             #ALLIANCE STATION
-            red2string = red2string + "Scout Name,David Reeves\n"
+            red2string = red2string + "Scout Name,\n"
             #SCOUT NAME
             red2string = red2string + "AUTON Initation Line,0\n"
             #AUTON INITATION LINE
@@ -117,7 +117,7 @@ for jsonimport in response["Schedule"]:
             print("+ Red 2")
         if(item["station"] == "Red3"):
             i3 += 1
-            red3string = red3string + "Team Name,Test" + "\n"
+            red3string = red3string + "Team Name," + "\n"
             #TEAM NAME
             red3string = red3string + "Team Number,"
             red3string = red3string + str(item["teamNumber"]) + "\n"
@@ -128,7 +128,7 @@ for jsonimport in response["Schedule"]:
             red3string = red3string + "Alliance,"
             red3string = red3string + str(item["station"]) + "\n"
             #ALLIANCE STATION
-            red3string = red3string + "Scout Name,David Reeves\n"
+            red3string = red3string + "Scout Name,\n"
             #SCOUT NAME
             red3string = red3string + "AUTON Initation Line,0\n"
             #AUTON INITATION LINE
@@ -158,7 +158,7 @@ for jsonimport in response["Schedule"]:
             print("+ Red 3")
         if(item["station"] == "Blue1"):
             i4 += 1
-            blue1string = blue1string + "Team Name,Test" + "\n"
+            blue1string = blue1string + "Team Name," + "\n"
             #TEAM NAME
             blue1string = blue1string + "Team Number,"
             blue1string = blue1string + str(item["teamNumber"]) + "\n"
@@ -169,7 +169,7 @@ for jsonimport in response["Schedule"]:
             blue1string = blue1string + "Alliance,"
             blue1string = blue1string + str(item["station"]) + "\n"
             #ALLIANCE STATION
-            blue1string = blue1string + "Scout Name,David Reeves\n"
+            blue1string = blue1string + "Scout Name,\n"
             #SCOUT NAME
             blue1string = blue1string + "AUTON Initation Line,0\n"
             #AUTON INITATION LINE
@@ -199,7 +199,7 @@ for jsonimport in response["Schedule"]:
             print("+ Blue 1")
         if(item["station"] == "Blue2"):
             i5 += 1
-            blue2string = blue2string + "Team Name,Test" + "\n"
+            blue2string = blue2string + "Team Name," + "\n"
             #TEAM NAME
             blue2string = blue2string + "Team Number,"
             blue2string = blue2string + str(item["teamNumber"]) + "\n"
@@ -210,7 +210,7 @@ for jsonimport in response["Schedule"]:
             blue2string = blue2string + "Alliance,"
             blue2string = blue2string + str(item["station"]) + "\n"
             #ALLIANCE STATION
-            blue2string = blue2string + "Scout Name,David Reeves\n"
+            blue2string = blue2string + "Scout Name,\n"
             #SCOUT NAME
             blue2string = blue2string + "AUTON Initation Line,0\n"
             #AUTON INITATION LINE
@@ -240,7 +240,7 @@ for jsonimport in response["Schedule"]:
             print("+ Blue 2")
         if(item["station"] == "Blue3"):
             i6 += 1
-            blue3string = blue3string + "Team Name,Test" + "\n"
+            blue3string = blue3string + "Team Name," + "\n"
             #TEAM NAME
             blue3string = blue3string + "Team Number,"
             blue3string = blue3string + str(item["teamNumber"]) + "\n"
@@ -251,7 +251,7 @@ for jsonimport in response["Schedule"]:
             blue3string = blue3string + "Alliance,"
             blue3string = blue3string + str(item["station"]) + "\n"
             #ALLIANCE STATION
-            blue3string = blue3string + "Scout Name,David Reeves\n"
+            blue3string = blue3string + "Scout Name,\n"
             #SCOUT NAME
             blue3string = blue3string + "AUTON Initation Line,0\n"
             #AUTON INITATION LINE
