@@ -1,0 +1,3 @@
+title=IRScoutRed3
+author=Team 862
+orientation=portrait
