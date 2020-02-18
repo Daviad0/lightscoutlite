@@ -44,7 +44,7 @@ for jsonimport in response["Schedule"]:
             red1string = red1string + "Match Num," + "1\n"
             #MATCH NUMBER
             red1string = red1string + "Alliance,"
-            red1string = red1string + str(item["station"]) + "\n"
+            red1string = red1string + "Red" + "\n"
             #ALLIANCE STATION
             red1string = red1string + "Scout Name,\n"
             #SCOUT NAME
@@ -85,7 +85,7 @@ for jsonimport in response["Schedule"]:
             red2string = red2string + "Match Num," + "1\n"
             #MATCH NUMBER
             red2string = red2string + "Alliance,"
-            red2string = red2string + str(item["station"]) + "\n"
+            red2string = red2string + "Red" + "\n"
             #ALLIANCE STATION
             red2string = red2string + "Scout Name,\n"
             #SCOUT NAME
@@ -126,7 +126,7 @@ for jsonimport in response["Schedule"]:
             red3string = red3string + "Match Num," + "1\n"
             #MATCH NUMBER
             red3string = red3string + "Alliance,"
-            red3string = red3string + str(item["station"]) + "\n"
+            red3string = red3string + "Red" + "\n"
             #ALLIANCE STATION
             red3string = red3string + "Scout Name,\n"
             #SCOUT NAME
@@ -167,7 +167,7 @@ for jsonimport in response["Schedule"]:
             blue1string = blue1string + "Match Num," + "1\n"
             #MATCH NUMBER
             blue1string = blue1string + "Alliance,"
-            blue1string = blue1string + str(item["station"]) + "\n"
+            blue1string = blue1string + "Blue" + "\n"
             #ALLIANCE STATION
             blue1string = blue1string + "Scout Name,\n"
             #SCOUT NAME
@@ -208,7 +208,7 @@ for jsonimport in response["Schedule"]:
             blue2string = blue2string + "Match Num," + "1\n"
             #MATCH NUMBER
             blue2string = blue2string + "Alliance,"
-            blue2string = blue2string + str(item["station"]) + "\n"
+            blue2string = blue2string + "Blue" + "\n"
             #ALLIANCE STATION
             blue2string = blue2string + "Scout Name,\n"
             #SCOUT NAME
@@ -249,7 +249,7 @@ for jsonimport in response["Schedule"]:
             blue3string = blue3string + "Match Num," + "1\n"
             #MATCH NUMBER
             blue3string = blue3string + "Alliance,"
-            blue3string = blue3string + str(item["station"]) + "\n"
+            blue3string = blue3string + "Blue" + "\n"
             #ALLIANCE STATION
             blue3string = blue3string + "Scout Name,\n"
             #SCOUT NAME
