@@ -1,3 +1,0 @@
-title=LightningScoutingDemo
-author=Team 862
-orientation=portrait

@@ -19,6 +19,12 @@
 #:set fontSize 24
 
 <IRscoutGUI>:
+    canvas:
+        Color:
+            rgba: 102, 130, 255, 0.5
+        Rectangle: #woohoo!!!
+            size: self.size
+            pos: self.pos
     cols: 1
     rows: 6
     spacing: 20
@@ -68,11 +74,13 @@
             TextInput:
                 id: txtTeamName
                 text: ''
+                multiline: False
             Label:
                 text: 'Team Number'
             TextInput:
                 id: txtTeamNumber
                 text: ''
+                multiline: False
             
 
         GridLayout:
@@ -85,6 +93,7 @@
                 TextInput:
                     id: txtMatchNum
                     text: ''
+                    multiline: False
 
             BoxLayout:
                 Label:
@@ -108,6 +117,7 @@
             TextInput:
                 id: txtScoutName
                 text: ''
+                multiline: False
 
 ########################
 # Auton / Cycle Section
@@ -294,12 +304,22 @@
         size_hint: 1, 0.4
 
 
-        Label:
-            text: 'End Game'
-            text_size: self.size
-            halign: 'left'
-            valign: 'middle'
+        GridLayout:
+            cols: 1
+            rows: 2
             size_hint: 0.25, 1
+
+            Label:
+                text: 'End Game'
+                text_size: self.size
+                halign: 'left'
+                valign: 'middle'
+                
+            ToggleButton:
+                id: btnRobotDisabled
+                text: 'Disabled'
+                on_press: root.cb_btnDisabled()
+            
             
         GridLayout:
             cols: 2

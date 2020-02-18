@@ -1,3 +1,0 @@
-title=IRScoutBlue2
-author=Team 862
-orientation=portrait
