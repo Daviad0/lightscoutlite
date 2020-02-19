@@ -370,9 +370,11 @@ class IRscoutGUI(GridLayout):
         if(entry.endGameDisabled > 0):
             setToggleButton(self.ids.btnRobotDisabled, 1)
             self.ids.btnRobotDisabled.text = "Disabled (" + str(entry.endGameDisabled) + "s)"
+            self.ids.btnRobotDisabled.background_color = (1.0, 0.0, 0.0, 1.0)
         else:
             setToggleButton(self.ids.btnRobotDisabled, 0)
             self.ids.btnRobotDisabled.text = "Not Disabled"
+            self.ids.btnRobotDisabled.background_color = (0.0, 1.0, 0.0, 1.0)
         
         # Reset button activities
         self.ids.btnParkOnly.disabled = False
@@ -414,6 +416,7 @@ class IRscoutGUI(GridLayout):
         self.ids.labPCouter.text = str(entry.powerCellOuter[self.currentCycleId])
         self.ids.labPCinner.text = str(entry.powerCellInner[self.currentCycleId])
         self.ids.labPCmiss.text  = str(entry.powerCellMiss[self.currentCycleId])
+        self.checkPCbut()
 
 
     # Fucntion to get the match data
@@ -510,26 +513,31 @@ class IRscoutGUI(GridLayout):
 
         parentLayout = GridLayout(cols = 1, padding = 20)
         layout2 = GridLayout(cols = 3, padding = 20)
-        
+        topSeconds = Button(text="Whole Match")
+        noSeconds = Button(text="Not Disabled")
         if(entry.endGameDisabled > 0 and entry.endGameDisabled < 150):
             addSeconds = Button(text="+")
             removeSeconds = Button(text="-")
             setToggleButton(self.ids.btnRobotDisabled, 1)
             self.ids.btnRobotDisabled.text = "Disabled (" + str(entry.endGameDisabled) + "s)"
+            self.ids.btnRobotDisabled.background_color = (1.0, 0.0, 0.0, 1.0)
         elif(entry.endGameDisabled >= 150):
             addSeconds = Button(text="+",disabled=True)
             removeSeconds = Button(text="-")
             setToggleButton(self.ids.btnRobotDisabled, 1)
             self.ids.btnRobotDisabled.text = "Disabled (" + str(entry.endGameDisabled) + "s)"
+            self.ids.btnRobotDisabled.background_color = (1.0, 0.0, 0.0, 1.0)
+            topSeconds.background_color= (1,0,0,1)
         else:
             addSeconds = Button(text="+")
             removeSeconds = Button(text="-",disabled=True)
             setToggleButton(self.ids.btnRobotDisabled, 0)
             self.ids.btnRobotDisabled.text = "Not Disabled" 
+            self.ids.btnRobotDisabled.background_color = (0.0, 1.0, 0.0, 1.0)
+            noSeconds.background_color= (0.0, 1.0, 0.0, 1.0)
         numSeconds = Label(text=str(entry.endGameDisabled)+"s")
         doneButton = Button(text="Done")
-        topSeconds = Button(text="Whole Match")
-        noSeconds = Button(text="Not Disabled")
+        
         layout2.add_widget(addSeconds)
         layout2.add_widget(numSeconds)
         layout2.add_widget(removeSeconds)
@@ -688,18 +696,48 @@ class IRscoutGUI(GridLayout):
         else:
             btnAlliance.text = 'Blue'
             btnAlliance.background_color = [0, 0, 1, 1]
-
+    def checkPCbut(self):
+        pcSum = int(self.ids.labPClower.text) + int(self.ids.labPCouter.text) + \
+                int(self.ids.labPCinner.text) + int(self.ids.labPCmiss.text)
+        if(pcSum >= MAX_POWER_CELLS):
+            self.ids.butPCmissUp.disabled = True
+            self.ids.butPCinnerUp.disabled = True
+            self.ids.butPCouterUp.disabled = True
+            self.ids.butPClowerUp.disabled = True
+        else:
+            self.ids.butPCmissUp.disabled = False
+            self.ids.butPCinnerUp.disabled = False
+            self.ids.butPCouterUp.disabled = False
+            self.ids.butPClowerUp.disabled = False
+        if(int(self.ids.labPClower.text) == 0):
+            self.ids.butPClowerDown.disabled = True
+        else:
+            self.ids.butPClowerDown.disabled = False
+        if(int(self.ids.labPCouter.text) == 0):
+            self.ids.butPCouterDown.disabled = True
+        else:
+            self.ids.butPCouterDown.disabled = False
+        if(int(self.ids.labPCinner.text) == 0):
+            self.ids.butPCinnerDown.disabled = True
+        else:
+            self.ids.butPCinnerDown.disabled = False
+        if(int(self.ids.labPCmiss.text) == 0):
+            self.ids.butPCmissDown.disabled = True
+        else:
+            self.ids.butPCmissDown.disabled = False
     # Power cell up arrow callback
     def cb_btnPCup(self, labPC):
         pcSum = int(self.ids.labPClower.text) + int(self.ids.labPCouter.text) + \
                 int(self.ids.labPCinner.text) + int(self.ids.labPCmiss.text)
-        
         if( pcSum < MAX_POWER_CELLS):
             increasePC(labPC)
+        self.checkPCbut()
+        
 
     # Power cell down arrow callback
     def cb_btnPCdown(self, labPC):
         decreasePC(labPC)
+        self.checkPCbut()
 
     def cb_btnParkOnly(self, btnParkOnly):
         if( getToggleButton( btnParkOnly ) ):

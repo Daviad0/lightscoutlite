@@ -6,18 +6,18 @@ Match Num,1
 Alliance,Red
 Scout Name,sdf
 AUTON Initiation Line,1
-Power Cell Lower,15,3,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Lower,0,3,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Inner,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Inner,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
 Control Panel Rotation,1
 Control Panel Position,1
 Game Park,0
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
-Robot Disabled,150
+Robot Disabled,0
 #
 Team Name,AFS
 Team Number,
@@ -26,10 +26,10 @@ Match Num,af
 Alliance,Blue
 Scout Name,sadf
 AUTON Initiation Line,1
-Power Cell Lower,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Lower,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,5,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Inner,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Cycle Completed Status,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
@@ -57,7 +57,7 @@ Game Park,0
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
-Robot Disabled,1
+Robot Disabled,0
 #
 Team Name,New Team
 Team Number,1234
@@ -97,7 +97,7 @@ Game Park,1
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
-Robot Disabled,1
+Robot Disabled,0
 #
 Team Name,testit
 Team Number,
@@ -106,11 +106,11 @@ Match Num,
 Alliance,Blue
 Scout Name,
 AUTON Initiation Line,1
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Lower,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,1
 Control Panel Position,0
 Game Park,1

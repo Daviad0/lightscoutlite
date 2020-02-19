@@ -21,7 +21,7 @@
 <IRscoutGUI>:
     canvas:
         Color:
-            rgba: 102, 130, 255, 0.5
+            rgba: 0.1, 0.1, 0.1, 1
         Rectangle: #woohoo!!!
             size: self.size
             pos: self.pos
@@ -163,10 +163,11 @@
                     valign: 'middle'
 
                 ImageButton:
-                    id: butPClowerDown
-                    source: 'arrow-down.png'
+                    id: butPClowerUp
+                    source: 'arrow-up.png'
+                    background_color: 0.0705, 0.6823, 0.4392, 1
                     size_hint: 0.3, 1
-                    on_press: root.cb_btnPCdown(labPClower)
+                    on_press: root.cb_btnPCup(labPClower)
 
                 Label:
                     id: labPClower
@@ -174,11 +175,13 @@
                     font_size: fontSize
                     size_hint: 0.2, 1
 
+                
                 ImageButton:
-                    id: butPClowerUp
-                    source: 'arrow-up.png'
+                    id: butPClowerDown
+                    source: 'arrow-down.png'
+                    background_color: 0.9529, 0.1333, 0.3372, 1
                     size_hint: 0.3, 1
-                    on_press: root.cb_btnPCup(labPClower)
+                    on_press: root.cb_btnPCdown(labPClower)
 
             BoxLayout:
                 spacing: 5
@@ -191,10 +194,11 @@
                     valign: 'middle'
 
                 ImageButton:
-                    id: butPCouterDown
-                    source: 'arrow-down.png'
+                    id: butPCouterUp
+                    source: 'arrow-up.png'
+                    background_color: 0.0705, 0.6823, 0.4392, 1
                     size_hint: 0.3, 1
-                    on_press: root.cb_btnPCdown(labPCouter)
+                    on_press: root.cb_btnPCup(labPCouter)
                     
                 Label:
                     id: labPCouter
@@ -203,10 +207,12 @@
                     size_hint: 0.2, 1
 
                 ImageButton:
-                    id: butPCouterUp
-                    source: 'arrow-up.png'
+                    id: butPCouterDown
+                    source: 'arrow-down.png'
+                    background_color: 0.9529, 0.1333, 0.3372, 1
                     size_hint: 0.3, 1
-                    on_press: root.cb_btnPCup(labPCouter)
+                    on_press: root.cb_btnPCdown(labPCouter)
+                
                     
             BoxLayout:
                 spacing: 5
@@ -219,10 +225,11 @@
                     valign: 'middle'
 
                 ImageButton:
-                    id: butPCinnerDown
-                    source: 'arrow-down.png'
+                    id: butPCinnerUp
+                    source: 'arrow-up.png'
+                    background_color: 0.0705, 0.6823, 0.4392, 1
                     size_hint: 0.3, 1
-                    on_press: root.cb_btnPCdown(labPCinner)
+                    on_press: root.cb_btnPCup(labPCinner)
 
                 Label:
                     id: labPCinner
@@ -231,10 +238,12 @@
                     size_hint: 0.2, 1
 
                 ImageButton:
-                    id: butPCinnerUp
-                    source: 'arrow-up.png'
+                    id: butPCinnerDown
+                    source: 'arrow-down.png'
+                    background_color: 0.9529, 0.1333, 0.3372, 1
                     size_hint: 0.3, 1
-                    on_press: root.cb_btnPCup(labPCinner)
+                    on_press: root.cb_btnPCdown(labPCinner)
+                
                                         
             BoxLayout:
                 spacing: 5
@@ -247,22 +256,24 @@
                     valign: 'middle'
 
                 ImageButton:
-                    id: butPCmissDown
-                    source: 'arrow-down.png'
+                    id: butPCmissUp
+                    source: 'arrow-up.png'
+                    background_color: 0.0705, 0.6823, 0.4392, 1
                     size_hint: 0.3, 1
-                    on_press: root.cb_btnPCdown(labPCmiss)
+                    on_press: root.cb_btnPCup(labPCmiss)
 
                 Label:
                     id: labPCmiss
                     text: '0'
                     font_size: fontSize
                     size_hint: 0.2, 1
-
                 ImageButton:
-                    id: butPCmissUp
-                    source: 'arrow-up.png'
+                    id: butPCmissDown
+                    source: 'arrow-down.png'
+                    background_color: 0.9529, 0.1333, 0.3372, 1
                     size_hint: 0.3, 1
-                    on_press: root.cb_btnPCup(labPCmiss)
+                    on_press: root.cb_btnPCdown(labPCmiss)
+                
                     
         ImageButton:
             id: btnCycleNext
