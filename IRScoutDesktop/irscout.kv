@@ -1,0 +1,392 @@
+# kivy 1.0
+#:import Factory kivy.factory.Factory
+
+<MyPopup@Popup>:
+    auto_dismiss: False
+    Button:
+        text: 'Close me!'
+        on_release: root.dismiss()
+        
+        
+<ImageButton@Button>:
+    source: None
+    Image:
+        source: root.source
+        pos: root.pos
+        size: root.size
+           
+
+#:set fontSize 24
+
+<IRscoutGUI>:
+    canvas:
+        Color:
+            rgba: 0.1, 0.1, 0.1, 1
+        Rectangle: #woohoo!!!
+            size: self.size
+            pos: self.pos
+    cols: 1
+    rows: 6
+    spacing: 20
+    padding: [20,10]
+
+
+#################
+# Status Section
+#################
+#    Label:
+#        id: labStatusBar
+#        text: 'STATUS BAR'
+#        font_size: fontSize
+#        size_hint: 1, 0.20
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint: 1, 0.20
+
+        Label:
+            text: ''
+            size_hint: 0.10, 1
+            
+        Label:
+            id: labStatusBar
+            text: 'STATUS BAR'
+            font_size: fontSize
+            size_hint: 0.80, 1
+
+        Button:
+            id: btnSetUser
+            text: ''
+            background_color: 0, 0, 0, 0 
+            size_hint: 0.10, 1
+            on_press: root.cb_btnSetUser(btnSetUser)
+    
+#################
+# Header Section
+#################
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint: 1, 0.3
+
+        BoxLayout:
+            Label:
+                text: 'Team Name'
+            TextInput:
+                id: txtTeamName
+                text: ''
+                multiline: False
+            Label:
+                text: 'Team Number'
+            TextInput:
+                id: txtTeamNumber
+                text: ''
+                multiline: False
+            
+
+        GridLayout:
+            cols: 2
+            rows: 1
+            
+            BoxLayout:
+                Label:
+                    text: 'Match Number'
+                TextInput:
+                    id: txtMatchNum
+                    text: ''
+                    multiline: False
+
+            BoxLayout:
+                Label:
+                    text: 'Alliance'
+                
+                Button:
+                    id: btnAlliance
+                    text: 'Blue'
+                    background_color: 0, 0, 1, 1
+                    on_press: root.cb_btnAlliance(btnAlliance)
+
+#                Label:
+#                    id: labAlliance
+#                    text: 'Blue'
+#                    background_color: 0, 0, 1, 1 
+                
+        BoxLayout:
+            Label:
+                size_hint: 0.25, 1
+                text: 'Scout Name'
+            TextInput:
+                id: txtScoutName
+                text: ''
+                multiline: False
+
+########################
+# Auton / Cycle Section
+########################
+    GridLayout:
+        cols: 3
+        rows: 1
+        spacing: 15
+
+        ImageButton:
+            id: btnCyclePrev
+            source: 'arrow-left.png'
+            size_hint: 0.2, 1
+            on_press: root.cb_btnCyclePrev()
+
+        BoxLayout:
+            orientation: 'vertical'
+            spacing: 20
+	    
+            BoxLayout:
+                spacing: 20
+                orientation: 'horizontal'
+                Label:
+                    id: labAutonCycle
+                    text_size: self.size
+                    font_size: fontSize
+                    halign: 'left'
+                    valign: 'middle'
+                    text: 'AUTON / CYCLE ##'
+
+                ToggleButton:
+                    id: togInitLine
+                    text: 'Initiation Line'
+
+            BoxLayout:
+                spacing: 5
+                orientation: 'horizontal'
+                Label:
+                    text: 'PC Lower: '
+                    font_size: fontSize
+                    text_size: self.size
+                    halign: 'left'
+                    valign: 'middle'
+
+                ImageButton:
+                    id: butPClowerUp
+                    source: 'arrow-up.png'
+                    background_color: 0.0705, 0.6823, 0.4392, 1
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCup(labPClower)
+
+                Label:
+                    id: labPClower
+                    text: '0'
+                    font_size: fontSize
+                    size_hint: 0.2, 1
+
+                
+                ImageButton:
+                    id: butPClowerDown
+                    source: 'arrow-down.png'
+                    background_color: 0.9529, 0.1333, 0.3372, 1
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCdown(labPClower)
+
+            BoxLayout:
+                spacing: 5
+                orientation: 'horizontal'
+                Label:
+                    text: 'PC Outer: '
+                    font_size: fontSize
+                    text_size: self.size
+                    halign: 'left'
+                    valign: 'middle'
+
+                ImageButton:
+                    id: butPCouterUp
+                    source: 'arrow-up.png'
+                    background_color: 0.0705, 0.6823, 0.4392, 1
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCup(labPCouter)
+                    
+                Label:
+                    id: labPCouter
+                    text: '0'
+                    font_size: fontSize
+                    size_hint: 0.2, 1
+
+                ImageButton:
+                    id: butPCouterDown
+                    source: 'arrow-down.png'
+                    background_color: 0.9529, 0.1333, 0.3372, 1
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCdown(labPCouter)
+                
+                    
+            BoxLayout:
+                spacing: 5
+                orientation: 'horizontal'
+                Label:
+                    text: 'PC Inner: '
+                    font_size: fontSize
+                    text_size: self.size
+                    halign: 'left'
+                    valign: 'middle'
+
+                ImageButton:
+                    id: butPCinnerUp
+                    source: 'arrow-up.png'
+                    background_color: 0.0705, 0.6823, 0.4392, 1
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCup(labPCinner)
+
+                Label:
+                    id: labPCinner
+                    text: '0'
+                    font_size: fontSize
+                    size_hint: 0.2, 1
+
+                ImageButton:
+                    id: butPCinnerDown
+                    source: 'arrow-down.png'
+                    background_color: 0.9529, 0.1333, 0.3372, 1
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCdown(labPCinner)
+                
+                                        
+            BoxLayout:
+                spacing: 5
+                orientation: 'horizontal'
+                Label:
+                    text: 'Missed: '
+                    font_size: fontSize
+                    text_size: self.size
+                    halign: 'left'
+                    valign: 'middle'
+
+                ImageButton:
+                    id: butPCmissUp
+                    source: 'arrow-up.png'
+                    background_color: 0.0705, 0.6823, 0.4392, 1
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCup(labPCmiss)
+
+                Label:
+                    id: labPCmiss
+                    text: '0'
+                    font_size: fontSize
+                    size_hint: 0.2, 1
+                ImageButton:
+                    id: butPCmissDown
+                    source: 'arrow-down.png'
+                    background_color: 0.9529, 0.1333, 0.3372, 1
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCdown(labPCmiss)
+                
+                    
+        ImageButton:
+            id: btnCycleNext
+            source: 'arrow-right.png'
+            size_hint: 0.2, 1
+            on_press: root.cb_btnCycleNext()
+
+
+########################
+# Control Panel Section
+########################
+    GridLayout:
+        cols: 3
+        rows: 1
+        size_hint: 1, 0.2
+
+        Label:
+            text: 'Control Panel'
+            text_size: self.size
+            halign: 'left'
+            valign: 'middle'
+            size_hint: 0.5, 1
+
+        ToggleButton:
+            id: btnCPRot
+            text: 'Rotation'
+            
+        ToggleButton:
+            id: btnCPPos
+            text: 'Position'
+
+
+###################
+# End Game Section
+###################
+    GridLayout:
+        cols: 2
+        rows: 1
+        size_hint: 1, 0.4
+
+
+        GridLayout:
+            cols: 1
+            rows: 2
+            size_hint: 0.25, 1
+
+            Label:
+                text: 'End Game'
+                text_size: self.size
+                halign: 'left'
+                valign: 'middle'
+                
+            ToggleButton:
+                id: btnRobotDisabled
+                text: 'Disabled'
+                on_press: root.cb_btnDisabled()
+            
+            
+        GridLayout:
+            cols: 2
+            rows: 2
+    
+            ToggleButton:
+                id: btnParkOnly
+                text: 'Park Only'
+                on_press: root.cb_btnParkOnly(btnParkOnly)
+    
+            ToggleButton:
+                id: btnClimbAtt
+                text: 'Climb Attempted'
+    
+            ToggleButton:
+                id: btnClimbSuc
+                text: 'Climb Succesful'
+                on_press: root.cb_btnClimbOrBalance(btnClimbSuc)
+
+            ToggleButton:
+                id: btnBalance
+                text: 'Balance Succesful'
+                on_press: root.cb_btnClimbOrBalance(btnBalance)
+
+#######################
+# Navigation  Section
+#######################
+    GridLayout:
+        cols: 5
+        rows: 1
+        size_hint: 1, 0.20
+        
+        Button:
+            id: btnPrev
+            text: 'Previous'
+            on_press: root.cb_btnPrev()
+
+        Button:
+            id: btnNext
+            text: 'Next'
+            on_press: root.cb_btnNext()
+
+        Button:
+            id: btnSave
+            text: 'Save'
+            on_press: root.cb_btnSave()
+  
+        Button:
+            id: btnDelete
+            text: 'Delete'
+            disabled: True
+            on_press: root.cb_btnDelete()
+                      
+        Button:
+            id: btnNew
+            text: 'New Entry'
+            disabled: True
+            on_press: root.cb_btnNewEntry()
+

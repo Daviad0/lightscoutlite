@@ -474,7 +474,7 @@ class IRscoutGUI(GridLayout):
         popup = Popup(title='Do you want to save your updates?',
                            content=layout,
                            auto_dismiss=False,
-                           size_hint=(None, None), size=(250,200))
+                           size_hint=(None, None), size=(500,400))
         
         yesButton.bind( on_release = popup.dismiss )
         yesButton.bind( on_release =  self.cb_saveYesButton )
@@ -550,7 +550,7 @@ class IRscoutGUI(GridLayout):
         popup = Popup(title='Disabled Menu',
                            content=parentLayout,
                            auto_dismiss=False,
-                           size_hint=(None, None), size=(500,400))
+                           size_hint=(None, None), size=(750,600))
         addSeconds.bind( on_press = self.disabledSecAdd)
         addSeconds.bind( on_release = popup.dismiss)
         topSeconds.bind( on_press = self.disabledTop)
