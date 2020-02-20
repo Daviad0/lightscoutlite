@@ -1,7 +1,9 @@
 from kivy.app import App
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.popup import Popup
+from kivy.uix.label import Label
 from kivy.uix.button import Button
+from kivy.core.window import Window
 import copy
 
 
@@ -21,7 +23,8 @@ DEBUG = 0
 
 AllMatchData = []
 
-FileName = 'IRscout_Blue1.csv'
+ParamFileName = 'IRscout.txt'
+FileName = ''
 DefaultEventCode = ''
 
 
@@ -30,7 +33,6 @@ DefaultEventCode = ''
 class matchEntry:
     
     def __init__(self):
-        
         global DefaultEventCode
         self.teamName = ''
         self.teamNumber = ''
@@ -50,6 +52,7 @@ class matchEntry:
         self.endGameClimbAttempt = 0
         self.endGameClimbSuccess = 0
         self.endGameBalance = 0
+        self.endGameDisabled = 0
         
     def outputEntryToString(self):
         # Write Header Seaction
@@ -95,6 +98,7 @@ class matchEntry:
         outStr += 'Climb Attempt,' + str(self.endGameClimbAttempt) + '\n'
         outStr += 'Climb Success,' + str(self.endGameClimbSuccess) + '\n'
         outStr += 'Balance Success,' + str(self.endGameBalance) + '\n'
+        outStr += 'Robot Disabled,' + str(self.endGameDisabled) + '\n'
         
         # Footer
         outStr += '#\n'
@@ -122,6 +126,7 @@ class matchEntry:
         if( self.endGameClimbAttempt != entry.endGameClimbAttempt ): return 0
         if( self.endGameClimbSuccess != entry.endGameClimbSuccess ): return 0
         if( self.endGameBalance != entry.endGameBalance ): return 0
+        if( self.endGameDisabled != entry.endGameDisabled): return 0
         return 1
     
 
@@ -146,10 +151,11 @@ def writeMatchEntry( ofp, entry ):
     
 
 def readAllMatchData( ifp ):
+    
     # Read the data
     indata = ifp.readlines()
     ifp.close()
-
+    
     for i in range(0, len(indata)):
         indata[i] = indata[i].rstrip()    
     
@@ -241,6 +247,11 @@ def readAllMatchData( ifp ):
         data = indata[lineIdx].split(',')
         entry.endGameBalance = int(data[1])
         lineIdx = lineIdx + 1
+
+        data = indata[lineIdx].split(',')
+        entry.endGameDisabled = int(data[1])
+        lineIdx = lineIdx + 1
+        
         
         # Skip footer
         lineIdx = lineIdx + 1
@@ -356,6 +367,19 @@ class IRscoutGUI(GridLayout):
         setToggleButton(self.ids.btnClimbAtt, entry.endGameClimbAttempt)
         setToggleButton(self.ids.btnClimbSuc, entry.endGameClimbSuccess)
         setToggleButton(self.ids.btnBalance, entry.endGameBalance)
+        if(entry.endGameDisabled > 0):
+            setToggleButton(self.ids.btnRobotDisabled, 1)
+            self.ids.btnRobotDisabled.text = "Disabled (" + str(entry.endGameDisabled) + "s)"
+            self.ids.btnRobotDisabled.background_color = (1.0, 0.0, 0.0, 1.0)
+        else:
+            setToggleButton(self.ids.btnRobotDisabled, 0)
+            self.ids.btnRobotDisabled.text = "Not Disabled"
+            self.ids.btnRobotDisabled.background_color = (0.0, 1.0, 0.0, 1.0)
+        
+        # Reset button activities
+        self.ids.btnParkOnly.disabled = False
+        self.ids.btnClimbSuc.disabled = False
+        self.ids.btnBalance.disabled = False
         
         # Set button activities
         if( entry.endGamePark ):
@@ -392,6 +416,7 @@ class IRscoutGUI(GridLayout):
         self.ids.labPCouter.text = str(entry.powerCellOuter[self.currentCycleId])
         self.ids.labPCinner.text = str(entry.powerCellInner[self.currentCycleId])
         self.ids.labPCmiss.text  = str(entry.powerCellMiss[self.currentCycleId])
+        self.checkPCbut()
 
 
     # Fucntion to get the match data
@@ -400,7 +425,7 @@ class IRscoutGUI(GridLayout):
         entry = self.currentEntry
         
         # Get Header Section
-        entry.teamName = self.ids.txtTeamName.text
+        entry.teamName = self.ids.txtTeamName.text.strip('\n')
         entry.teamNumber = self.ids.txtTeamNumber.text
         entry.matchNum = self.ids.txtMatchNum.text
         entry.alliance = self.ids.btnAlliance.text
@@ -415,8 +440,7 @@ class IRscoutGUI(GridLayout):
         entry.endGamePark = getToggleButton( self.ids.btnParkOnly )
         entry.endGameClimbAttempt = getToggleButton( self.ids.btnClimbAtt )
         entry.endGameClimbSuccess = getToggleButton( self.ids.btnClimbSuc )
-        entry.endGameBalance = getToggleButton( self.ids.btnBalance )    
-        
+        entry.endGameBalance = getToggleButton( self.ids.btnBalance )
         
     # Fucntion to get cycle data
     def getCycleData(self):
@@ -450,7 +474,7 @@ class IRscoutGUI(GridLayout):
         popup = Popup(title='Do you want to save your updates?',
                            content=layout,
                            auto_dismiss=False,
-                           size_hint=(None, None), size=(250,200))
+                           size_hint=(None, None), size=(500,400))
         
         yesButton.bind( on_release = popup.dismiss )
         yesButton.bind( on_release =  self.cb_saveYesButton )
@@ -484,8 +508,84 @@ class IRscoutGUI(GridLayout):
         elif(self.SaveEvent == 'New'):
             self.cb_btnNewEntry()
 
+    def disabledPopup(self):
+        entry = self.currentEntry
 
+        parentLayout = GridLayout(cols = 1, padding = 20)
+        layout2 = GridLayout(cols = 3, padding = 20)
+        topSeconds = Button(text="Whole Match")
+        noSeconds = Button(text="Not Disabled")
+        if(entry.endGameDisabled > 0 and entry.endGameDisabled < 150):
+            addSeconds = Button(text="+")
+            removeSeconds = Button(text="-")
+            setToggleButton(self.ids.btnRobotDisabled, 1)
+            self.ids.btnRobotDisabled.text = "Disabled (" + str(entry.endGameDisabled) + "s)"
+            self.ids.btnRobotDisabled.background_color = (1.0, 0.0, 0.0, 1.0)
+        elif(entry.endGameDisabled >= 150):
+            addSeconds = Button(text="+",disabled=True)
+            removeSeconds = Button(text="-")
+            setToggleButton(self.ids.btnRobotDisabled, 1)
+            self.ids.btnRobotDisabled.text = "Disabled (" + str(entry.endGameDisabled) + "s)"
+            self.ids.btnRobotDisabled.background_color = (1.0, 0.0, 0.0, 1.0)
+            topSeconds.background_color= (1,0,0,1)
+        else:
+            addSeconds = Button(text="+")
+            removeSeconds = Button(text="-",disabled=True)
+            setToggleButton(self.ids.btnRobotDisabled, 0)
+            self.ids.btnRobotDisabled.text = "Not Disabled" 
+            self.ids.btnRobotDisabled.background_color = (0.0, 1.0, 0.0, 1.0)
+            noSeconds.background_color= (0.0, 1.0, 0.0, 1.0)
+        numSeconds = Label(text=str(entry.endGameDisabled)+"s")
+        doneButton = Button(text="Done")
+        
+        layout2.add_widget(addSeconds)
+        layout2.add_widget(numSeconds)
+        layout2.add_widget(removeSeconds)
+        layout = GridLayout(cols = 2, padding = 20) 
+        layout.add_widget(topSeconds)
+        layout.add_widget(noSeconds)
+        parentLayout.add_widget(layout2)
+        parentLayout.add_widget(layout)
+        parentLayout.add_widget(doneButton)
+        popup = Popup(title='Disabled Menu',
+                           content=parentLayout,
+                           auto_dismiss=False,
+                           size_hint=(None, None), size=(750,600))
+        addSeconds.bind( on_press = self.disabledSecAdd)
+        addSeconds.bind( on_release = popup.dismiss)
+        topSeconds.bind( on_press = self.disabledTop)
+        topSeconds.bind( on_release = popup.dismiss)
+        noSeconds.bind( on_press = self.disabledNot)
+        noSeconds.bind( on_release = popup.dismiss)
+        removeSeconds.bind( on_press = self.disabledSecSub)
+        removeSeconds.bind( on_release = popup.dismiss)
+        doneButton.bind( on_release = popup.dismiss )
+        popup.open()
+    def disabledSecAdd(self, tmp):
+        entry = self.currentEntry
 
+        entry.endGameDisabled = entry.endGameDisabled + 5
+        if(entry.endGameDisabled > 150):
+            entry.endGameDisabled = 150
+        
+        self.disabledPopup()
+    def disabledSecSub(self, tmp):
+        entry = self.currentEntry
+
+        entry.endGameDisabled = entry.endGameDisabled - 5
+        if(entry.endGameDisabled < 0):
+            entry.endGameDisabled = 0
+        self.disabledPopup()
+    def disabledTop(self, tmp):
+        entry = self.currentEntry
+
+        entry.endGameDisabled = 150
+        self.disabledPopup()
+    def disabledNot(self, tmp):
+        entry = self.currentEntry
+
+        entry.endGameDisabled = 0
+        self.disabledPopup()
     # Pop up confirm delete
     def deletePopup(self):
         layout = GridLayout(cols = 2, padding = 20) 
@@ -519,7 +619,7 @@ class IRscoutGUI(GridLayout):
         popup = Popup(title='File saved.',
                            content=layout,
                            auto_dismiss=False,
-                           size_hint=(None, None), size=(250,200))
+                           size_hint=(None, None), size=(500,400))
         
         dismissButton.bind( on_release = popup.dismiss )
         popup.open()
@@ -596,18 +696,48 @@ class IRscoutGUI(GridLayout):
         else:
             btnAlliance.text = 'Blue'
             btnAlliance.background_color = [0, 0, 1, 1]
-
+    def checkPCbut(self):
+        pcSum = int(self.ids.labPClower.text) + int(self.ids.labPCouter.text) + \
+                int(self.ids.labPCinner.text) + int(self.ids.labPCmiss.text)
+        if(pcSum >= MAX_POWER_CELLS):
+            self.ids.butPCmissUp.disabled = True
+            self.ids.butPCinnerUp.disabled = True
+            self.ids.butPCouterUp.disabled = True
+            self.ids.butPClowerUp.disabled = True
+        else:
+            self.ids.butPCmissUp.disabled = False
+            self.ids.butPCinnerUp.disabled = False
+            self.ids.butPCouterUp.disabled = False
+            self.ids.butPClowerUp.disabled = False
+        if(int(self.ids.labPClower.text) == 0):
+            self.ids.butPClowerDown.disabled = True
+        else:
+            self.ids.butPClowerDown.disabled = False
+        if(int(self.ids.labPCouter.text) == 0):
+            self.ids.butPCouterDown.disabled = True
+        else:
+            self.ids.butPCouterDown.disabled = False
+        if(int(self.ids.labPCinner.text) == 0):
+            self.ids.butPCinnerDown.disabled = True
+        else:
+            self.ids.butPCinnerDown.disabled = False
+        if(int(self.ids.labPCmiss.text) == 0):
+            self.ids.butPCmissDown.disabled = True
+        else:
+            self.ids.butPCmissDown.disabled = False
     # Power cell up arrow callback
     def cb_btnPCup(self, labPC):
         pcSum = int(self.ids.labPClower.text) + int(self.ids.labPCouter.text) + \
                 int(self.ids.labPCinner.text) + int(self.ids.labPCmiss.text)
-        
         if( pcSum < MAX_POWER_CELLS):
             increasePC(labPC)
+        self.checkPCbut()
+        
 
     # Power cell down arrow callback
     def cb_btnPCdown(self, labPC):
         decreasePC(labPC)
+        self.checkPCbut()
 
     def cb_btnParkOnly(self, btnParkOnly):
         if( getToggleButton( btnParkOnly ) ):
@@ -672,7 +802,8 @@ class IRscoutGUI(GridLayout):
                 self.currentEntry = copy.deepcopy(AllMatchData[self.currentFormId])
                 self.fillEntryData()
                 self.SaveEvent = ''
-
+    def cb_btnDisabled(self):
+        self.disabledPopup()
     # Save the current database
     def cb_btnSave(self):
         # Get the input match data
@@ -741,6 +872,30 @@ class IRscoutApp(App):
 
 
 if __name__ == '__main__':
+    # Set file name
+    ifp = open(ParamFileName, 'r')
+    indata = ifp.readlines()
+    ifp.close()
+    FileName = indata[0].rstrip()
     IRscoutApp().run()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -71,6 +71,7 @@ for jsonimport in response["Schedule"]:
             red1string = red1string + "Climb Success,0\n"
             #ENDGAME CLIMB SUCCESS
             red1string = red1string + "Balance Success,0\n"
+            red1string = red1string + "Robot Disabled,0\n"
             #ENDGAME BALANCE SUCCESS
             red1string = red1string + "#" + "\n"
             print("+ Red 1")
@@ -112,6 +113,7 @@ for jsonimport in response["Schedule"]:
             red2string = red2string + "Climb Success,0\n"
             #ENDGAME CLIMB SUCCESS
             red2string = red2string + "Balance Success,0\n"
+            red2string = red2string + "Robot Disabled,0\n"
             #ENDGAME BALANCE SUCCESS
             red2string = red2string + "#" + "\n"
             print("+ Red 2")
@@ -153,6 +155,7 @@ for jsonimport in response["Schedule"]:
             red3string = red3string + "Climb Success,0\n"
             #ENDGAME CLIMB SUCCESS
             red3string = red3string + "Balance Success,0\n"
+            red3string = red3string + "Robot Disabled,0\n"
             #ENDGAME BALANCE SUCCESS
             red3string = red3string + "#" + "\n"
             print("+ Red 3")
@@ -194,6 +197,7 @@ for jsonimport in response["Schedule"]:
             blue1string = blue1string + "Climb Success,0\n"
             #ENDGAME CLIMB SUCCESS
             blue1string = blue1string + "Balance Success,0\n"
+            blue1string = blue1string + "Robot Disabled,0\n"
             #ENDGAME BALANCE SUCCESS
             blue1string = blue1string + "#" + "\n"
             print("+ Blue 1")
@@ -235,6 +239,7 @@ for jsonimport in response["Schedule"]:
             blue2string = blue2string + "Climb Success,0\n"
             #ENDGAME CLIMB SUCCESS
             blue2string = blue2string + "Balance Success,0\n"
+            blue2string = blue2string + "Robot Disabled,0\n"
             #ENDGAME BALANCE SUCCESS
             blue2string = blue2string + "#" + "\n"
             print("+ Blue 2")
@@ -276,6 +281,7 @@ for jsonimport in response["Schedule"]:
             blue3string = blue3string + "Climb Success,0\n"
             #ENDGAME CLIMB SUCCESS
             blue3string = blue3string + "Balance Success,0\n"
+            blue3string = blue3string + "Robot Disabled,0\n"
             #ENDGAME BALANCE SUCCESS
             blue3string = blue3string + "#" + "\n"
             print("+ Blue 3")
