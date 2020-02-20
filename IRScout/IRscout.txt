@@ -1,1 +1,1 @@
-IRscout_Blue3.csv
+IRscout_Red3.csv
