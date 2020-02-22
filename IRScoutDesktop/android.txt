@@ -1,3 +1,0 @@
-title=IRScoutV1.0
-author=Team 862 Strategy
-orientation=portrait

@@ -650,7 +650,8 @@ class IRscoutGUI(GridLayout):
 
         self.currentCycleId = 0
         self.fillEntryData()
-
+    def CheckNumCharacters():
+        print("D")
   
     
         
@@ -774,7 +775,6 @@ class IRscoutGUI(GridLayout):
         if( self.currentCycleId < MAX_TELEOP_CYCLES):
             self.currentCycleId = self.currentCycleId + 1
         self.fillCycleData()
-
     # Go to previous match
     def cb_btnPrev(self):
         if(self.currentFormId > 0):

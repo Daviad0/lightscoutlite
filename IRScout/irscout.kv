@@ -75,6 +75,7 @@
                 id: txtTeamName
                 text: ''
                 multiline: False
+                border: 1,1,1,1
             Label:
                 text: 'Team Number'
             TextInput:
@@ -130,8 +131,10 @@
         ImageButton:
             id: btnCyclePrev
             source: 'arrow-left.png'
-            size_hint: 0.2, 1
+            size_hint: 0.15, 1
             on_press: root.cb_btnCyclePrev()
+            background_down: 'ButtonYes.png'
+            background_normal: 'ButtonNo.png'
 
         BoxLayout:
             orientation: 'vertical'
@@ -151,14 +154,43 @@
                 ToggleButton:
                     id: togInitLine
                     text: 'Initiation Line'
+                    background_down: 'ButtonYes.png'
+                    background_normal: 'ButtonNo.png'
+            BoxLayout:
+                spacing: 5
+                orientation: 'horizontal'
+                Label:
+                    text: 'Missed: '
+                    font_size: 30
+                    size_hint: 0.8, 1
+                    halign: 'left'
+                    valign: 'middle'
 
+                ImageButton:
+                    id: butPCmissUp
+                    source: 'arrow-up.png'
+                    background_color: 0.0705, 0.6823, 0.4392, 1
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCup(labPCmiss)
+                
+                Label:
+                    id: labPCmiss
+                    text: '0'
+                    font_size: 30
+                    size_hint: 0.4, 1
+                ImageButton:
+                    id: butPCmissDown
+                    source: 'arrow-down.png'
+                    background_color: 0.9529, 0.1333, 0.3372, 1
+                    size_hint: 0.3, 1
+                    on_press: root.cb_btnPCdown(labPCmiss)
             BoxLayout:
                 spacing: 5
                 orientation: 'horizontal'
                 Label:
                     text: 'PC Lower: '
-                    font_size: fontSize
-                    text_size: self.size
+                    font_size: 30
+                    size_hint: 0.8, 1
                     halign: 'left'
                     valign: 'middle'
 
@@ -172,8 +204,8 @@
                 Label:
                     id: labPClower
                     text: '0'
-                    font_size: fontSize
-                    size_hint: 0.2, 1
+                    font_size: 30
+                    size_hint: 0.4, 1
 
                 
                 ImageButton:
@@ -188,8 +220,8 @@
                 orientation: 'horizontal'
                 Label:
                     text: 'PC Outer: '
-                    font_size: fontSize
-                    text_size: self.size
+                    font_size: 30
+                    size_hint: 0.8, 1
                     halign: 'left'
                     valign: 'middle'
 
@@ -203,8 +235,8 @@
                 Label:
                     id: labPCouter
                     text: '0'
-                    font_size: fontSize
-                    size_hint: 0.2, 1
+                    font_size: 30
+                    size_hint: 0.4, 1
 
                 ImageButton:
                     id: butPCouterDown
@@ -219,8 +251,8 @@
                 orientation: 'horizontal'
                 Label:
                     text: 'PC Inner: '
-                    font_size: fontSize
-                    text_size: self.size
+                    font_size: 30
+                    size_hint: 0.8, 1
                     halign: 'left'
                     valign: 'middle'
 
@@ -234,8 +266,8 @@
                 Label:
                     id: labPCinner
                     text: '0'
-                    font_size: fontSize
-                    size_hint: 0.2, 1
+                    font_size: 30
+                    size_hint: 0.4, 1
 
                 ImageButton:
                     id: butPCinnerDown
@@ -245,41 +277,16 @@
                     on_press: root.cb_btnPCdown(labPCinner)
                 
                                         
-            BoxLayout:
-                spacing: 5
-                orientation: 'horizontal'
-                Label:
-                    text: 'Missed: '
-                    font_size: fontSize
-                    text_size: self.size
-                    halign: 'left'
-                    valign: 'middle'
-
-                ImageButton:
-                    id: butPCmissUp
-                    source: 'arrow-up.png'
-                    background_color: 0.0705, 0.6823, 0.4392, 1
-                    size_hint: 0.3, 1
-                    on_press: root.cb_btnPCup(labPCmiss)
-
-                Label:
-                    id: labPCmiss
-                    text: '0'
-                    font_size: fontSize
-                    size_hint: 0.2, 1
-                ImageButton:
-                    id: butPCmissDown
-                    source: 'arrow-down.png'
-                    background_color: 0.9529, 0.1333, 0.3372, 1
-                    size_hint: 0.3, 1
-                    on_press: root.cb_btnPCdown(labPCmiss)
+            
                 
                     
         ImageButton:
             id: btnCycleNext
             source: 'arrow-right.png'
-            size_hint: 0.2, 1
+            size_hint: 0.15, 1
             on_press: root.cb_btnCycleNext()
+            background_down: 'ButtonYes.png'
+            background_normal: 'ButtonNo.png'
 
 
 ########################
@@ -300,10 +307,14 @@
         ToggleButton:
             id: btnCPRot
             text: 'Rotation'
+            background_down: 'ButtonYes.png'
+            background_normal: 'ButtonNo.png'   
             
         ToggleButton:
             id: btnCPPos
             text: 'Position'
+            background_down: 'ButtonYes.png'
+            background_normal: 'ButtonNo.png'
 
 
 ###################
@@ -340,20 +351,28 @@
                 id: btnParkOnly
                 text: 'Park Only'
                 on_press: root.cb_btnParkOnly(btnParkOnly)
+                background_down: 'ButtonYes.png'
+                background_normal: 'ButtonNo.png'
     
             ToggleButton:
                 id: btnClimbAtt
                 text: 'Climb Attempted'
+                background_down: 'ButtonYes.png'
+                background_normal: 'ButtonNo.png'
     
             ToggleButton:
                 id: btnClimbSuc
                 text: 'Climb Succesful'
                 on_press: root.cb_btnClimbOrBalance(btnClimbSuc)
+                background_down: 'ButtonYes.png'
+                background_normal: 'ButtonNo.png'
 
             ToggleButton:
                 id: btnBalance
                 text: 'Balance Succesful'
                 on_press: root.cb_btnClimbOrBalance(btnBalance)
+                background_down: 'ButtonYes.png'
+                background_normal: 'ButtonNo.png'
 
 #######################
 # Navigation  Section
