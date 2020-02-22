@@ -370,11 +370,9 @@ class IRscoutGUI(GridLayout):
         if(entry.endGameDisabled > 0):
             setToggleButton(self.ids.btnRobotDisabled, 1)
             self.ids.btnRobotDisabled.text = "Disabled (" + str(entry.endGameDisabled) + "s)"
-            self.ids.btnRobotDisabled.background_color = (1.0, 0.0, 0.0, 1.0)
         else:
             setToggleButton(self.ids.btnRobotDisabled, 0)
             self.ids.btnRobotDisabled.text = "Not Disabled"
-            self.ids.btnRobotDisabled.background_color = (0.0, 1.0, 0.0, 1.0)
         
         # Reset button activities
         self.ids.btnParkOnly.disabled = False
@@ -409,6 +407,14 @@ class IRscoutGUI(GridLayout):
             self.ids.togInitLine.disabled = False
             setToggleButton(self.ids.togInitLine, entry.initiationLine)
             MAX_POWER_CELLS = MAX_POWER_CELLS_AUTON
+        if(self.currentCycleId < MAX_TELEOP_CYCLES):
+            self.ids.btnCycleNext.disabled = False
+        else:
+            self.ids.btnCycleNext.disabled = True
+        if(self.currentCycleId > 0):
+            self.ids.btnCyclePrev.disabled = False
+        else:
+            self.ids.btnCyclePrev.disabled = True
         
         self.ids.labAutonCycle.text = cycleStr
         
@@ -520,21 +526,22 @@ class IRscoutGUI(GridLayout):
             removeSeconds = Button(text="-")
             setToggleButton(self.ids.btnRobotDisabled, 1)
             self.ids.btnRobotDisabled.text = "Disabled (" + str(entry.endGameDisabled) + "s)"
-            self.ids.btnRobotDisabled.background_color = (1.0, 0.0, 0.0, 1.0)
+            topSeconds.background_normal='ButtonNo.png'
+            noSeconds.background_normal='ButtonNo.png'
         elif(entry.endGameDisabled >= 150):
             addSeconds = Button(text="+",disabled=True)
             removeSeconds = Button(text="-")
             setToggleButton(self.ids.btnRobotDisabled, 1)
             self.ids.btnRobotDisabled.text = "Disabled (" + str(entry.endGameDisabled) + "s)"
-            self.ids.btnRobotDisabled.background_color = (1.0, 0.0, 0.0, 1.0)
-            topSeconds.background_color= (1,0,0,1)
+            topSeconds.background_normal='ButtonYes.png'
+            noSeconds.background_normal='ButtonNo.png'
         else:
             addSeconds = Button(text="+")
             removeSeconds = Button(text="-",disabled=True)
             setToggleButton(self.ids.btnRobotDisabled, 0)
             self.ids.btnRobotDisabled.text = "Not Disabled" 
-            self.ids.btnRobotDisabled.background_color = (0.0, 1.0, 0.0, 1.0)
-            noSeconds.background_color= (0.0, 1.0, 0.0, 1.0)
+            noSeconds.background_normal='ButtonYes.png'
+            topSeconds.background_normal='ButtonNo.png'
         numSeconds = Label(text=str(entry.endGameDisabled)+"s")
         doneButton = Button(text="Done")
         
@@ -590,8 +597,8 @@ class IRscoutGUI(GridLayout):
     def deletePopup(self):
         layout = GridLayout(cols = 2, padding = 20) 
 
-        yesButton = Button(text = 'Yes') 
-        noButton = Button(text = 'No')
+        yesButton = Button(text = 'Yes',background_down='ButtonYes.png',background_normal='ButtonNo.png') 
+        noButton = Button(text = 'No',background_down='ButtonYes.png',background_normal='ButtonNo.png')
 
         layout.add_widget(yesButton) 
         layout.add_widget(noButton)   
@@ -612,7 +619,7 @@ class IRscoutGUI(GridLayout):
     def savePopupConfirm(self):
         layout = GridLayout(cols = 1, padding = 20) 
 
-        dismissButton = Button(text = 'Dismiss') 
+        dismissButton = Button(text = 'Dismiss',background_down='ButtonYes.png',background_normal='ButtonNo.png') 
 
         layout.add_widget(dismissButton) 
                     
@@ -767,6 +774,11 @@ class IRscoutGUI(GridLayout):
         self.getCycleData()
         if( self.currentCycleId > 0 ):
             self.currentCycleId = self.currentCycleId - 1
+        if(self.currentCycleId > 0):
+            self.ids.btnCyclePrev.disabled = False
+        else:
+            self.ids.btnCyclePrev.disabled = True
+        self.ids.btnCycleNext.disabled = True
         self.fillCycleData()
 
     # Move to NEXT cycle
@@ -774,6 +786,11 @@ class IRscoutGUI(GridLayout):
         self.getCycleData()
         if( self.currentCycleId < MAX_TELEOP_CYCLES):
             self.currentCycleId = self.currentCycleId + 1
+        if(self.currentCycleId < MAX_TELEOP_CYCLES):
+            self.ids.btnCycleNext.disabled = False
+        else:
+            self.ids.btnCycleNext.disabled = True
+        self.ids.btnCyclePrev.disabled = True
         self.fillCycleData()
     # Go to previous match
     def cb_btnPrev(self):

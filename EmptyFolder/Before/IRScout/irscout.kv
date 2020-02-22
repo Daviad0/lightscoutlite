@@ -75,7 +75,6 @@
                 id: txtTeamName
                 text: ''
                 multiline: False
-                border: 1,1,1,1
             Label:
                 text: 'Team Number'
             TextInput:
@@ -133,7 +132,7 @@
             source: 'arrow-left.png'
             size_hint: 0.15, 1
             on_press: root.cb_btnCyclePrev()
-            background_down: 'ButtonYes.png'
+            background_down: 'ButtonNav.png'
             background_normal: 'ButtonNo.png'
 
         BoxLayout:
@@ -160,7 +159,7 @@
                 spacing: 5
                 orientation: 'horizontal'
                 Label:
-                    text: 'Missed: '
+                    text: 'PC Missed: '
                     font_size: 30
                     size_hint: 0.8, 1
                     halign: 'left'
@@ -285,7 +284,7 @@
             source: 'arrow-right.png'
             size_hint: 0.15, 1
             on_press: root.cb_btnCycleNext()
-            background_down: 'ButtonYes.png'
+            background_down: 'ButtonNav.png'
             background_normal: 'ButtonNo.png'
 
 
@@ -308,13 +307,15 @@
             id: btnCPRot
             text: 'Rotation'
             background_down: 'ButtonYes.png'
-            background_normal: 'ButtonNo.png'   
+            background_normal: 'ButtonNo.png' 
+            border: (16,16,16,16)  
             
         ToggleButton:
             id: btnCPPos
             text: 'Position'
             background_down: 'ButtonYes.png'
             background_normal: 'ButtonNo.png'
+            border: (16,16,16,16)  
 
 
 ###################
@@ -341,6 +342,8 @@
                 id: btnRobotDisabled
                 text: 'Disabled'
                 on_press: root.cb_btnDisabled()
+                background_down: 'ButtonYes.png'
+                background_normal: 'ButtonNo.png'
             
             
         GridLayout:
@@ -386,26 +389,36 @@
             id: btnPrev
             text: 'Previous'
             on_press: root.cb_btnPrev()
+            background_down: 'ButtonNav.png'
+            background_normal: 'ButtonNo.png'
 
         Button:
             id: btnNext
             text: 'Next'
             on_press: root.cb_btnNext()
+            background_down: 'ButtonNav.png'
+            background_normal: 'ButtonNo.png'
 
         Button:
             id: btnSave
             text: 'Save'
             on_press: root.cb_btnSave()
+            background_down: 'ButtonNav.png'
+            background_normal: 'ButtonNo.png'
   
         Button:
             id: btnDelete
             text: 'Delete'
             disabled: True
             on_press: root.cb_btnDelete()
+            background_down: 'ButtonNav.png'
+            background_normal: 'ButtonNo.png'
                       
         Button:
             id: btnNew
             text: 'New Entry'
             disabled: True
             on_press: root.cb_btnNewEntry()
+            background_down: 'ButtonNav.png'
+            background_normal: 'ButtonNo.png'
 
