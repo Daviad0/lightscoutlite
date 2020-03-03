@@ -1,0 +1,3 @@
+title=IRScoutV1.1
+author=Team 862 Scouting
+orientation=portrait
