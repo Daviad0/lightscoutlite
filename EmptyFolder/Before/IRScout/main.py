@@ -295,10 +295,13 @@ def getToggleButton( toggleButton ):
 def setAllianceButton( button, value ):
     if( value == 'Blue' ):
         button.text = 'Blue'
-        button.background_color = [0, 0, 1, 1]
+        button.background_image = 'ButtonBlue.png'
+        button.background_normal = 'ButtonBlue.png'
+        button.background_down = 'ButtonBlue.png'
     else:
         button.text = 'Red'
-        button.background_color = [1, 0, 0, 1]
+        button.background_normal = 'ButtonRed.png'
+        button.background_down = 'ButtonRed.png'
         
         
 # IR Scout GUI class
@@ -700,10 +703,12 @@ class IRscoutGUI(GridLayout):
     def cb_btnAlliance(self, btnAlliance):
         if( btnAlliance.text == 'Blue' ):
             btnAlliance.text = 'Red'
-            btnAlliance.background_color = [1, 0, 0, 1]
+            btnAlliance.background_normal = 'ButtonRed.png'
+            btnAlliance.background_down = 'ButtonRed.png'
         else:
             btnAlliance.text = 'Blue'
-            btnAlliance.background_color = [0, 0, 1, 1]
+            btnAlliance.background_normal = 'ButtonBlue.png'
+            btnAlliance.background_down = 'ButtonBlue.png'
     def checkPCbut(self):
         pcSum = int(self.ids.labPClower.text) + int(self.ids.labPCouter.text) + \
                 int(self.ids.labPCinner.text) + int(self.ids.labPCmiss.text)

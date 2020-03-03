@@ -37,8 +37,8 @@ if(TryFile("ScoutAdmin.csv", "Scouting Admin") == 1):
         numberofmatches = 0
         for num in dataarray:
             numberofmatches += 1
-        print("There are " + str(numberofmatches/12) + " matches loaded in from the previous session...")
-        TOTAL_MATCH_NUM = round(numberofmatches/12)
+        print("There are " + str(numberofmatches/6) + " matches loaded in from the previous session...")
+        TOTAL_MATCH_NUM = round(numberofmatches/6)
         for x in range(TOTAL_MATCH_NUM):
             tabBlue1.append("U")
             tabBlue2.append("U")
@@ -98,8 +98,6 @@ while True:
     "H" to disable help menu
     *******************************
     "E" to exit flag and save
-    "S" to save all flags
-    "DA" to delete all flags
     *******************************
     "F" to flag a tablet match
     "U" to mark a tablet as usable\n> """ if helpMenu == True else """
@@ -125,8 +123,8 @@ while True:
             helpMenu = True
     elif(userChoice == "E"):
         open("ScoutAdmin.csv", "w").close()
-        print("Saving...")
         flaggedOutput = open("ScoutAdmin.csv", "w")
+        flagString = ""
         index = 0
         print(tabBlue1[3])
         for x in range(len(tabBlue1)):
@@ -198,6 +196,7 @@ while True:
     open("ScoutAdmin.csv", "w").close()
     flaggedOutput = open("ScoutAdmin.csv", "w")
     indexauto = 0
+    flagString = ""
     print(tabBlue1[3])
     for x in range(len(tabBlue1)):
         flagString = flagString + "Blue1," + str(x+1) + "," + tabBlue1[x] + "\n"
