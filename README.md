@@ -21,14 +21,14 @@ You can host the app either on an android tablet or a computer
 3. Run the command inside the "IRScout" folder `python main.py` and you will see a bunch of lines pop up. Your app is starting up and it will soon launch in another window
 4. You are done! The app on the computer should function exactly as the app on the tablet!
 
-##Administration
+## Administration
 
 There are several administration tools available to the user!
 
-####Database Creation
+#### Database Creation
 
 You can create a database using your data! If you use the default file names, great! Uploading them into your "After" folder will allow you to run the script "createtodatabase.py". After doing this, you will get a CSV file that will have all your data formatted in a way that can be used by most database interpreters.
 
-####ScoutAdmin
+#### ScoutAdmin
 
 LightScout also offers an administration tool to track progress of the students and disable tablets if needed. Per the game manual, WiFi connections are not allowed, so the process stores a file which will be used when opening "createtodatabase.py". All of the FLAGGED data entries will not be counted. To use the console interface, run `python scoutadmin.py` in the python folder to get started!
