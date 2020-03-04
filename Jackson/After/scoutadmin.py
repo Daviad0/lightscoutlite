@@ -6,6 +6,8 @@ import json
 import csv
 import math
 import os
+import requests
+import urllib2
 clear = lambda: os.system('clear')
 from stringcolor import * 
 tabRed1 = []
@@ -16,7 +18,12 @@ tabBlue2 = []
 tabBlue3 = []
 flagString = ""
 helpMenu = True
-
+def internet_on():
+    try:
+        urllib2.urlopen('http://216.58.192.142', timeout=1)
+        return True
+    except urllib2.URLError as err: 
+        return False
 matchNum = 1
 def TryFile(fileName, station):
     try:
