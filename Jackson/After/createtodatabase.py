@@ -85,7 +85,7 @@ if(TryFile(Red1, "Red1")!= 0):
                     if(tcn > 1):
                         cycles += int(dataarray[12+(y*20)][tcn])
                 if(str(dataarray[2+(y*20)][1])):
-                    if((str(dataarray[6+(y*20)][1]) != 0) and ((alower+aouter+ainner+amissed+tlower+touter+tinner+touter+tmissed+int(dataarray[13+(y*20)][1])+int(dataarray[14+(y*20)][1])+int(dataarray[15+(y*20)][1])+int(dataarray[16+(y*20)][1])+int(dataarray[17+(y*20)][1])+int(dataarray[18+(y*20)][1])+int(dataarray[19+(y*20)][1])) != 0)):
+                    if((str(dataarray[6+(y*20)][1]) != "") or ((alower+aouter+ainner+amissed+tlower+touter+tinner+touter+tmissed+int(dataarray[13+(y*20)][1])+int(dataarray[14+(y*20)][1])+int(dataarray[15+(y*20)][1])+int(dataarray[16+(y*20)][1])+int(dataarray[17+(y*20)][1])+int(dataarray[18+(y*20)][1])+int(dataarray[19+(y*20)][1])) != 0)):
                         #TEAM DATA
                         print(cs("\u2713 Team "+str(dataarray[2+(y*20)][1]) + " in Match " + str(dataarray[4+(y*20)][1]),"green"))
                         dataout = dataout + (dataarray[2+(y*20)][1]) + ","
@@ -181,7 +181,7 @@ if(TryFile(Red2, "Red2")!= 0):
                     if(tcn > 1):
                         cycles += int(dataarray[12+(y*20)][tcn])
                 if(str(dataarray[2+(y*20)][1])):
-                    if((str(dataarray[6+(y*20)][1]) != 0) and ((alower+aouter+ainner+amissed+tlower+touter+tinner+touter+tmissed+int(dataarray[13+(y*20)][1])+int(dataarray[14+(y*20)][1])+int(dataarray[15+(y*20)][1])+int(dataarray[16+(y*20)][1])+int(dataarray[17+(y*20)][1])+int(dataarray[18+(y*20)][1])+int(dataarray[19+(y*20)][1])) != 0)):
+                    if((str(dataarray[6+(y*20)][1]) != "") or ((alower+aouter+ainner+amissed+tlower+touter+tinner+touter+tmissed+int(dataarray[13+(y*20)][1])+int(dataarray[14+(y*20)][1])+int(dataarray[15+(y*20)][1])+int(dataarray[16+(y*20)][1])+int(dataarray[17+(y*20)][1])+int(dataarray[18+(y*20)][1])+int(dataarray[19+(y*20)][1])) != 0)):
                         #TEAM DATA
                         print(cs("\u2713 Team "+str(dataarray[2+(y*20)][1]) + " in Match " + str(dataarray[4+(y*20)][1]),"green"))
                         dataout = dataout + (dataarray[2+(y*20)][1]) + ","
@@ -277,7 +277,7 @@ if(TryFile(Red3, "Red3")!= 0):
                     if(tcn > 1):
                         cycles += int(dataarray[12+(y*20)][tcn])
                 if(str(dataarray[2+(y*20)][1])):
-                    if((str(dataarray[6+(y*20)][1]) != 0) and ((alower+aouter+ainner+amissed+tlower+touter+tinner+touter+tmissed+int(dataarray[13+(y*20)][1])+int(dataarray[14+(y*20)][1])+int(dataarray[15+(y*20)][1])+int(dataarray[16+(y*20)][1])+int(dataarray[17+(y*20)][1])+int(dataarray[18+(y*20)][1])+int(dataarray[19+(y*20)][1])) != 0)):
+                    if((str(dataarray[6+(y*20)][1]) != "") or ((alower+aouter+ainner+amissed+tlower+touter+tinner+touter+tmissed+int(dataarray[13+(y*20)][1])+int(dataarray[14+(y*20)][1])+int(dataarray[15+(y*20)][1])+int(dataarray[16+(y*20)][1])+int(dataarray[17+(y*20)][1])+int(dataarray[18+(y*20)][1])+int(dataarray[19+(y*20)][1])) != 0)):
                         #TEAM DATA
                         print(cs("\u2713 Team "+str(dataarray[2+(y*20)][1]) + " in Match " + str(dataarray[4+(y*20)][1]),"green"))
                         dataout = dataout + (dataarray[2+(y*20)][1]) + ","
@@ -373,7 +373,7 @@ if(TryFile(Blue1, "Blue1")!= 0):
                     if(tcn > 1):
                         cycles += int(dataarray[12+(y*20)][tcn])
                 if(str(dataarray[2+(y*20)][1])):
-                    if((str(dataarray[6+(y*20)][1]) != 0) and ((alower+aouter+ainner+amissed+tlower+touter+tinner+touter+tmissed+int(dataarray[13+(y*20)][1])+int(dataarray[14+(y*20)][1])+int(dataarray[15+(y*20)][1])+int(dataarray[16+(y*20)][1])+int(dataarray[17+(y*20)][1])+int(dataarray[18+(y*20)][1])+int(dataarray[19+(y*20)][1])) != 0)):
+                    if((str(dataarray[6+(y*20)][1]) != "") or ((alower+aouter+ainner+amissed+tlower+touter+tinner+touter+tmissed+int(dataarray[13+(y*20)][1])+int(dataarray[14+(y*20)][1])+int(dataarray[15+(y*20)][1])+int(dataarray[16+(y*20)][1])+int(dataarray[17+(y*20)][1])+int(dataarray[18+(y*20)][1])+int(dataarray[19+(y*20)][1])) != 0)):
                         #TEAM DATA
                         print(cs("\u2713 Team "+str(dataarray[2+(y*20)][1]) + " in Match " + str(dataarray[4+(y*20)][1]),"green"))
                         dataout = dataout + (dataarray[2+(y*20)][1]) + ","
@@ -469,7 +469,7 @@ if(TryFile(Blue2, "Blue2")!= 0):
                     if(tcn > 1):
                         cycles += int(dataarray[12+(y*20)][tcn])
                 if(str(dataarray[2+(y*20)][1])):
-                    if((str(dataarray[6+(y*20)][1]) != 0) and ((alower+aouter+ainner+amissed+tlower+touter+tinner+touter+tmissed+int(dataarray[13+(y*20)][1])+int(dataarray[14+(y*20)][1])+int(dataarray[15+(y*20)][1])+int(dataarray[16+(y*20)][1])+int(dataarray[17+(y*20)][1])+int(dataarray[18+(y*20)][1])+int(dataarray[19+(y*20)][1])) != 0)):
+                    if((str(dataarray[6+(y*20)][1]) != "") or ((alower+aouter+ainner+amissed+tlower+touter+tinner+touter+tmissed+int(dataarray[13+(y*20)][1])+int(dataarray[14+(y*20)][1])+int(dataarray[15+(y*20)][1])+int(dataarray[16+(y*20)][1])+int(dataarray[17+(y*20)][1])+int(dataarray[18+(y*20)][1])+int(dataarray[19+(y*20)][1])) != 0)):
                         #TEAM DATA
                         print(cs("\u2713 Team "+str(dataarray[2+(y*20)][1]) + " in Match " + str(dataarray[4+(y*20)][1]),"green"))
                         dataout = dataout + (dataarray[2+(y*20)][1]) + ","
@@ -564,7 +564,7 @@ if(TryFile(Blue3, "Blue3")!= 0):
                     if(tcn > 1):
                         cycles += int(dataarray[12+(y*20)][tcn])
                 if(str(dataarray[2+(y*20)][1])):
-                    if((str(dataarray[6+(y*20)][1]) != 0) and ((alower+aouter+ainner+amissed+tlower+touter+tinner+touter+tmissed+int(dataarray[13+(y*20)][1])+int(dataarray[14+(y*20)][1])+int(dataarray[15+(y*20)][1])+int(dataarray[16+(y*20)][1])+int(dataarray[17+(y*20)][1])+int(dataarray[18+(y*20)][1])+int(dataarray[19+(y*20)][1])) != 0)):
+                    if((str(dataarray[6+(y*20)][1]) != "") or ((alower+aouter+ainner+amissed+tlower+touter+tinner+touter+tmissed+int(dataarray[13+(y*20)][1])+int(dataarray[14+(y*20)][1])+int(dataarray[15+(y*20)][1])+int(dataarray[16+(y*20)][1])+int(dataarray[17+(y*20)][1])+int(dataarray[18+(y*20)][1])+int(dataarray[19+(y*20)][1])) != 0)):
                         #TEAM DATA
                         print(cs("\u2713 Team "+str(dataarray[2+(y*20)][1]) + " in Match " + str(dataarray[4+(y*20)][1]),"green"))
                         dataout = dataout + (dataarray[2+(y*20)][1]) + ","

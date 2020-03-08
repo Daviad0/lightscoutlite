@@ -7,7 +7,6 @@ import csv
 import math
 import os
 import requests
-import urllib2
 clear = lambda: os.system('clear')
 from stringcolor import * 
 tabRed1 = []

@@ -4,16 +4,16 @@ Team Number,5523
 Event Code,mijac
 Match Num,1
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name,Mengxiang Shi
+AUTON Initiation Line,0
+Power Cell Lower,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
+Game Park,1
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
@@ -24,16 +24,16 @@ Team Number,6556
 Event Code,mijac
 Match Num,2
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Mengxiang Shi
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
+Game Park,1
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
@@ -44,16 +44,16 @@ Team Number,5205
 Event Code,mijac
 Match Num,3
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Mengxiang Shi
+AUTON Initiation Line,0
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,0,2,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
+Game Park,1
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
@@ -64,16 +64,16 @@ Team Number,6591
 Event Code,mijac
 Match Num,4
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name,Mengxiang  Shi
+AUTON Initiation Line,1
+Power Cell Lower,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
+Game Park,1
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
@@ -84,18 +84,18 @@ Team Number,5675
 Event Code,mijac
 Match Num,5
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Mengxiang  Shi
+AUTON Initiation Line,0
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,0,3,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
-Climb Attempt,0
-Climb Success,0
+Climb Attempt,1
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -104,16 +104,16 @@ Team Number,3773
 Event Code,mijac
 Match Num,6
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name,Mengxiang  Shi
+AUTON Initiation Line,1
+Power Cell Lower,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
+Game Park,1
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
@@ -124,8 +124,8 @@ Team Number,6092
 Event Code,mijac
 Match Num,7
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Mengxiang  Shi
+AUTON Initiation Line,0
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -137,15 +137,15 @@ Game Park,0
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
-Robot Disabled,0
+Robot Disabled,150
 #
 Team Name,Bongo Bots
 Team Number,8374
 Event Code,mijac
 Match Num,8
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Mengxiang  Shi
+AUTON Initiation Line,0
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -157,35 +157,35 @@ Game Park,0
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
-Robot Disabled,0
+Robot Disabled,150
 #
 Team Name,Dogbotics 1
 Team Number,6138
 Event Code,mijac
 Match Num,9
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name,Mira Goemaere
+AUTON Initiation Line,0
+Power Cell Lower,0,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
+Game Park,1
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
 Robot Disabled,0
 #
-Team Name,Technical Difficulties 
+Team Name,Technical Difficulties
 Team Number,8275
 Event Code,mijac
 Match Num,10
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Mengxiang  Shi
+AUTON Initiation Line,0
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -193,7 +193,7 @@ Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
+Game Park,1
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
@@ -204,16 +204,16 @@ Team Number,8373
 Event Code,mijac
 Match Num,11
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Mengxiang  Shi
+AUTON Initiation Line,0
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
+Game Park,1
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
@@ -224,18 +224,18 @@ Team Number,3773
 Event Code,mijac
 Match Num,12
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name,Mengxiang Shi
+AUTON Initiation Line,1
+Power Cell Lower,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
 Climb Attempt,0
-Climb Success,0
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -244,18 +244,18 @@ Team Number,5502
 Event Code,mijac
 Match Num,13
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name,Anwesha
+AUTON Initiation Line,1
+Power Cell Lower,3,3,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
 Climb Attempt,0
-Climb Success,0
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -264,8 +264,8 @@ Team Number,8377
 Event Code,mijac
 Match Num,14
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name, Anwesha
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -273,7 +273,7 @@ Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
+Game Park,1
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
@@ -284,18 +284,18 @@ Team Number,3773
 Event Code,mijac
 Match Num,15
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name, Anwesha and Mengx iang
+AUTON Initiation Line,1
+Power Cell Lower,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
 Climb Attempt,0
-Climb Success,0
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -304,18 +304,18 @@ Team Number,5688
 Event Code,mijac
 Match Num,16
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Vasudha and Anwesha
+AUTON Initiation Line,0
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,0,3,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
-Climb Attempt,0
-Climb Success,0
+Climb Attempt,1
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -324,8 +324,8 @@ Team Number,8300
 Event Code,mijac
 Match Num,17
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name, Vasudha
+AUTON Initiation Line,0
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -337,25 +337,25 @@ Game Park,0
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
-Robot Disabled,0
+Robot Disabled,150
 #
 Team Name,Lightning Robotics
 Team Number,862
 Event Code,mijac
 Match Num,18
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Vasudha and Anwesha
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,3,1,0,1,3,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Inner,0,2,4,2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
 Climb Attempt,0
-Climb Success,0
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -364,16 +364,16 @@ Team Number,5559
 Event Code,mijac
 Match Num,19
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name, tanishka
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,0,0,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
+Game Park,1
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
@@ -384,39 +384,39 @@ Team Number,8394
 Event Code,mijac
 Match Num,20
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name, tanishka
+AUTON Initiation Line,1
+Power Cell Lower,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
-Robot Disabled,0
+Robot Disabled,100
 #
 Team Name,Mechanical Mustangs
 Team Number,6877
 Event Code,mijac
 Match Num,21
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name,Tanishka
+AUTON Initiation Line,1
+Power Cell Lower,0,3,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
 Climb Attempt,0
 Climb Success,0
-Balance Success,0
+Balance Success,1
 Robot Disabled,0
 #
 Team Name,Gear Grinders
@@ -424,13 +424,13 @@ Team Number,5559
 Event Code,mijac
 Match Num,22
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name, Tanishka
+AUTON Initiation Line,0
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
@@ -444,18 +444,18 @@ Team Number,7197
 Event Code,mijac
 Match Num,23
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name,Mengxiang
+AUTON Initiation Line,0
+Power Cell Lower,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
-Climb Attempt,0
-Climb Success,0
+Climb Attempt,1
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -464,16 +464,16 @@ Team Number,3175
 Event Code,mijac
 Match Num,24
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Mengxiang
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
+Game Park,1
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
@@ -484,36 +484,36 @@ Team Number,5502
 Event Code,mijac
 Match Num,25
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name,Mengxiang
+AUTON Initiation Line,0
+Power Cell Lower,0,3,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
-Climb Attempt,0
+Game Park,1
+Climb Attempt,1
 Climb Success,0
 Balance Success,0
 Robot Disabled,0
 #
-Team Name,The Fighting Anomalocari 
+Team Name,The Fighting Anomalocari
 Team Number,7222
 Event Code,mijac
 Match Num,26
-Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Alliance,Red
+Scout Name,Anwesha
+AUTON Initiation Line,1
+Power Cell Lower,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
+Game Park,1
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
@@ -524,18 +524,18 @@ Team Number,7209
 Event Code,mijac
 Match Num,27
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name,Anwesha
+AUTON Initiation Line,1
+Power Cell Lower,0,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
-Climb Attempt,0
-Climb Success,0
+Climb Attempt,1
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -544,18 +544,18 @@ Team Number,8300
 Event Code,mijac
 Match Num,28
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Mengxiang
+AUTON Initiation Line,0
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
-Climb Attempt,0
-Climb Success,0
+Climb Attempt,1
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -564,18 +564,18 @@ Team Number,5675
 Event Code,mijac
 Match Num,29
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Tanishka
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Inner,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,2,2,2,2,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
 Climb Attempt,0
-Climb Success,0
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -584,18 +584,18 @@ Team Number,1023
 Event Code,mijac
 Match Num,30
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name, Vasudha
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,0,3,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Inner,0,0,4,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,6,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
 Climb Attempt,0
-Climb Success,0
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -605,12 +605,12 @@ Event Code,mijac
 Match Num,31
 Alliance,Blue
 Scout Name,
-AUTON Initation Line,0
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
@@ -625,17 +625,17 @@ Event Code,mijac
 Match Num,32
 Alliance,Blue
 Scout Name,
-AUTON Initation Line,0
+AUTON Initiation Line,0
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,0,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
 Climb Attempt,0
-Climb Success,0
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -644,13 +644,13 @@ Team Number,4568
 Event Code,mijac
 Match Num,33
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Riley s
+AUTON Initiation Line,0
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Inner,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
@@ -664,17 +664,17 @@ Team Number,5530
 Event Code,mijac
 Match Num,34
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Alex
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,3,3,2,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Inner,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
-Climb Attempt,0
+Game Park,1
+Climb Attempt,1
 Climb Success,0
 Balance Success,0
 Robot Disabled,0
@@ -684,13 +684,13 @@ Team Number,6138
 Event Code,mijac
 Match Num,35
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name, David
+AUTON Initiation Line,1
+Power Cell Lower,0,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
@@ -704,33 +704,33 @@ Team Number,1023
 Event Code,mijac
 Match Num,36
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name, David
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Control Panel Rotation,0
+Power Cell Outer,0,3,2,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Inner,0,0,2,2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Control Panel Rotation,1
 Control Panel Position,0
 Game Park,0
-Climb Attempt,0
-Climb Success,0
-Balance Success,0
+Climb Attempt,1
+Climb Success,1
+Balance Success,1
 Robot Disabled,0
 #
-Team Name,Q-Bots
+Team Name,Q-Bots Q-Bots
 Team Number,6092
 Event Code,mijac
 Match Num,37
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name,Evan P
+AUTON Initiation Line,1
+Power Cell Lower,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
@@ -744,13 +744,13 @@ Team Number,8394
 Event Code,mijac
 Match Num,38
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name,Riley s
+AUTON Initiation Line,1
+Power Cell Lower,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
@@ -764,17 +764,17 @@ Team Number,6580
 Event Code,mijac
 Match Num,39
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name,Ken boi
+AUTON Initiation Line,1
+Power Cell Lower,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,0,4,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,0,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
-Climb Attempt,0
+Game Park,1
+Climb Attempt,1
 Climb Success,0
 Balance Success,0
 Robot Disabled,0
@@ -784,17 +784,17 @@ Team Number,4216
 Event Code,mijac
 Match Num,40
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name,Ella
+AUTON Initiation Line,1
+Power Cell Lower,0,3,4,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
-Climb Attempt,0
+Game Park,1
+Climb Attempt,1
 Climb Success,0
 Balance Success,0
 Robot Disabled,0
@@ -804,8 +804,8 @@ Team Number,7221
 Event Code,mijac
 Match Num,41
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name, Alex
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -813,27 +813,27 @@ Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
+Game Park,1
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
 Robot Disabled,0
 #
-Team Name,Q-Bots
+Team Name,Q-BotsQ-Bots
 Team Number,6092
 Event Code,mijac
 Match Num,42
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name, Alex
+AUTON Initiation Line,1
+Power Cell Lower,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
+Game Park,1
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
@@ -844,8 +844,8 @@ Team Number,8393
 Event Code,mijac
 Match Num,43
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name, Alex
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -853,7 +853,7 @@ Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
+Game Park,1
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
@@ -864,17 +864,17 @@ Team Number,6580
 Event Code,mijac
 Match Num,44
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,David
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,3,4,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,0,5,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
-Climb Attempt,0
+Game Park,1
+Climb Attempt,1
 Climb Success,0
 Balance Success,0
 Robot Disabled,0
@@ -884,8 +884,8 @@ Team Number,8300
 Event Code,mijac
 Match Num,45
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,David
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -894,10 +894,10 @@ Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
-Climb Attempt,0
+Climb Attempt,1
 Climb Success,0
 Balance Success,0
-Robot Disabled,0
+Robot Disabled,50
 #
 Team Name,Cobrots
 Team Number,5502
@@ -905,17 +905,17 @@ Event Code,mijac
 Match Num,46
 Alliance,Blue
 Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+AUTON Initiation Line,1
+Power Cell Lower,0,3,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
-Climb Attempt,0
-Climb Success,0
+Climb Attempt,1
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -924,13 +924,13 @@ Team Number,6138
 Event Code,mijac
 Match Num,47
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name, ken boi
+AUTON Initiation Line,0
+Power Cell Lower,0,3,3,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
@@ -944,18 +944,18 @@ Team Number,5530
 Event Code,mijac
 Match Num,48
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,ken
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,3,3,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
-Climb Attempt,0
-Climb Success,0
+Climb Attempt,1
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -964,13 +964,13 @@ Team Number,6556
 Event Code,mijac
 Match Num,49
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,ken
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Inner,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
@@ -984,16 +984,16 @@ Team Number,7221
 Event Code,mijac
 Match Num,50
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name,Enoch K
+AUTON Initiation Line,1
+Power Cell Lower,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
+Game Park,1
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
@@ -1004,17 +1004,17 @@ Team Number,7209
 Event Code,mijac
 Match Num,51
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name,Enoch K
+AUTON Initiation Line,0
+Power Cell Lower,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
-Climb Attempt,0
+Game Park,1
+Climb Attempt,1
 Climb Success,0
 Balance Success,0
 Robot Disabled,0
@@ -1024,13 +1024,13 @@ Team Number,5205
 Event Code,mijac
 Match Num,52
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Enoch K
+AUTON Initiation Line,0
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,0,2,4,2,2,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Inner,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,1,1,1,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
@@ -1044,8 +1044,8 @@ Team Number,6591
 Event Code,mijac
 Match Num,53
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Enoch K
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1053,8 +1053,8 @@ Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
-Climb Attempt,0
+Game Park,1
+Climb Attempt,1
 Climb Success,0
 Balance Success,0
 Robot Disabled,0
@@ -1064,18 +1064,18 @@ Team Number,7209
 Event Code,mijac
 Match Num,54
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Enoch K
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
-Climb Attempt,0
-Climb Success,0
+Climb Attempt,1
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -1085,7 +1085,7 @@ Event Code,mijac
 Match Num,55
 Alliance,Blue
 Scout Name,
-AUTON Initation Line,0
+AUTON Initiation Line,0
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1105,7 +1105,7 @@ Event Code,mijac
 Match Num,56
 Alliance,Blue
 Scout Name,
-AUTON Initation Line,0
+AUTON Initiation Line,0
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1124,17 +1124,17 @@ Team Number,7197
 Event Code,mijac
 Match Num,57
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name,Ariel Ooms
+AUTON Initiation Line,1
+Power Cell Lower,3,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
-Climb Attempt,0
+Climb Attempt,1
 Climb Success,0
 Balance Success,0
 Robot Disabled,0
@@ -1144,13 +1144,13 @@ Team Number,8394
 Event Code,mijac
 Match Num,58
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Ariel Ooms
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
@@ -1164,16 +1164,16 @@ Team Number,6877
 Event Code,mijac
 Match Num,59
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name, Ariel Ooms
+AUTON Initiation Line,1
+Power Cell Lower,0,3,4,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
+Game Park,1
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
@@ -1184,13 +1184,13 @@ Team Number,1502
 Event Code,mijac
 Match Num,60
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name, Ariel Ooms
+AUTON Initiation Line,0
+Power Cell Lower,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
@@ -1204,19 +1204,19 @@ Team Number,5676
 Event Code,mijac
 Match Num,61
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name, Ariel Ooms
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,2,0,2,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Inner,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,5,3,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
 Climb Attempt,0
-Climb Success,0
-Balance Success,0
+Climb Success,1
+Balance Success,1
 Robot Disabled,0
 #
 Team Name,Robo Cats
@@ -1224,17 +1224,17 @@ Team Number,5688
 Event Code,mijac
 Match Num,62
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Ariel Ooms
+AUTON Initiation Line,0
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,0,3,1,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
-Climb Attempt,0
+Game Park,1
+Climb Attempt,1
 Climb Success,0
 Balance Success,0
 Robot Disabled,0
@@ -1244,13 +1244,13 @@ Team Number,6556
 Event Code,mijac
 Match Num,63
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name, Ariel Ooms
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,0,2,0,1,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Inner,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,0,2,0,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
@@ -1264,18 +1264,18 @@ Team Number,862
 Event Code,mijac
 Match Num,64
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name, Ariel Ooms
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,5,2,2,0,3,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Inner,0,0,0,1,1,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,1,2,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
 Climb Attempt,0
-Climb Success,0
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -1284,8 +1284,8 @@ Team Number,8377
 Event Code,mijac
 Match Num,65
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name, Ariel Ooms
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1304,8 +1304,8 @@ Team Number,7219
 Event Code,mijac
 Match Num,66
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name, Ariel Ooms
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1317,20 +1317,20 @@ Game Park,0
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
-Robot Disabled,0
+Robot Disabled,75
 #
-Team Name,Technical Difficulties 
+Team Name,Technical Difficulties
 Team Number,8275
 Event Code,mijac
 Match Num,67
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name, Ariel Ooms
+AUTON Initiation Line,1
+Power Cell Lower,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
@@ -1344,8 +1344,8 @@ Team Number,8377
 Event Code,mijac
 Match Num,68
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name, Ariel Ooms
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1353,7 +1353,7 @@ Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
+Game Park,1
 Climb Attempt,0
 Climb Success,0
 Balance Success,0
@@ -1364,18 +1364,18 @@ Team Number,5674
 Event Code,mijac
 Match Num,69
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name, Ariel Ooms
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Inner,0,3,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
 Climb Attempt,0
-Climb Success,0
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -1384,13 +1384,13 @@ Team Number,8378
 Event Code,mijac
 Match Num,70
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name, Ariel Ooms
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Inner,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
@@ -1404,18 +1404,18 @@ Team Number,1023
 Event Code,mijac
 Match Num,71
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name, Ariel Ooms
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,1,1,1,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Inner,2,3,2,1,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
 Climb Attempt,0
-Climb Success,0
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -1424,13 +1424,13 @@ Team Number,8373
 Event Code,mijac
 Match Num,72
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Ariel Ooms
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,1,2,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Inner,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
@@ -1444,8 +1444,8 @@ Team Number,6591
 Event Code,mijac
 Match Num,73
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Nicholas DaSilva
+AUTON Initiation Line,0
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1453,8 +1453,8 @@ Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
-Game Park,0
-Climb Attempt,0
+Game Park,1
+Climb Attempt,1
 Climb Success,0
 Balance Success,0
 Robot Disabled,0
@@ -1464,19 +1464,19 @@ Team Number,5530
 Event Code,mijac
 Match Num,74
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name, Ariel Ooms
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Outer,0,2,3,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Inner,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
 Climb Attempt,0
-Climb Success,0
-Balance Success,0
+Climb Success,1
+Balance Success,1
 Robot Disabled,0
 #
 Team Name,Mountie MegaBots
@@ -1484,18 +1484,18 @@ Team Number,7197
 Event Code,mijac
 Match Num,75
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
-Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Scout Name,Ariel Ooms
+AUTON Initiation Line,1
+Power Cell Lower,0,0,0,1,2,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Power Cell Miss,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-Cycle Completed Status,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Power Cell Miss,0,3,0,2,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cycle Completed Status,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
 Climb Attempt,0
-Climb Success,0
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -1504,8 +1504,8 @@ Team Number,6877
 Event Code,mijac
 Match Num,76
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name, Ariel Ooms
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1515,7 +1515,7 @@ Control Panel Rotation,0
 Control Panel Position,0
 Game Park,0
 Climb Attempt,0
-Climb Success,0
+Climb Success,1
 Balance Success,0
 Robot Disabled,0
 #
@@ -1524,8 +1524,8 @@ Team Number,8399
 Event Code,mijac
 Match Num,77
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Ariel Ooms
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -1544,8 +1544,8 @@ Team Number,6092
 Event Code,mijac
 Match Num,78
 Alliance,Blue
-Scout Name,
-AUTON Initation Line,0
+Scout Name,Ariel Ooms
+AUTON Initiation Line,1
 Power Cell Lower,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Outer,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 Power Cell Inner,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
